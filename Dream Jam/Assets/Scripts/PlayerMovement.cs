@@ -15,13 +15,12 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        midair = animator.GetBool("isJumping");
     }
     void FixedUpdate()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
-        animator.SetFloat("VerticalVelocity", Mathf.Abs(rb.velocity.y));
+        animator.SetFloat("VerticalVelocity", rb.velocity.y);
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
@@ -34,14 +33,11 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("Attack2", true);
         }
-        if (rb.velocity.y >0.5f)
+        if (Mathf.Abs(rb.velocity.y) > 2f)
         {
             animator.SetBool("isJumping", true);
         }
-        if (rb.velocity.y == 2.01f && midair == true)
-        {
-            animator.SetBool("Jumped", true);
-        }
+        
     }
     // Update is called once per frame
     void Update()
