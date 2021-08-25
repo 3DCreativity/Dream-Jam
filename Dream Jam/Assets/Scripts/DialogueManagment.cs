@@ -32,6 +32,10 @@ public class DialogueManagment : MonoBehaviour
 
         if (dialogue.name == "Magician")
         {
+            Character.sprite = faces[2];
+        }
+        else if (dialogue.name == "Game Developer")
+        {
             Character.sprite = faces[1];
         }
         else
