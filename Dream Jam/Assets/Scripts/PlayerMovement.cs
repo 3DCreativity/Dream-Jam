@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
-    void FixedUpdate()
+    void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
         
     }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         controller.Move(horizontalMove, false, jump);
         jump = false;

@@ -29,18 +29,16 @@ public class DialogueManagment : MonoBehaviour
     public void StartDialogue(Dialogue dialogue, UnityEvent onEnding)
     {
         animator.SetBool("isOpen", true);
-
-        if (dialogue.name == "Magician")
+        string[] characters = { "Magician", "Developer", "Cat", "Archer", "Ghost Executor", "Warrior", "Evil Wizard", "Evil Wizard 2" };
+        bool foundFace = false;
+        Character.sprite = faces[7];
+        for (int i=0; foundFace == false && i<7; i++)
         {
-            Character.sprite = faces[2];
-        }
-        else if (dialogue.name == "Game Developer")
-        {
-            Character.sprite = faces[1];
-        }
-        else
-        {
-            Character.sprite = faces[0];
+            if (dialogue.name == characters[i])
+            {
+                Character.sprite = faces[i];
+                foundFace = true;
+            }
         }
 
         nameText.text = dialogue.name;
