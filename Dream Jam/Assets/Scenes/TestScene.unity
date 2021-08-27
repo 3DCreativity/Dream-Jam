@@ -4421,17 +4421,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1668096982597869736, guid: 7a1db9791ac30dc4799f6193b4c5dc64, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: abab2b7bbe2c5ab4ba201b20f33728d7, type: 2}
     - target: {fileID: 1668096982597869738, guid: 7a1db9791ac30dc4799f6193b4c5dc64, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1668096982597869778, guid: 7a1db9791ac30dc4799f6193b4c5dc64, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1668096982597869783, guid: 7a1db9791ac30dc4799f6193b4c5dc64, type: 3}
       propertyPath: m_RootOrder
