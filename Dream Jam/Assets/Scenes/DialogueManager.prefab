@@ -46,7 +46,6 @@ MonoBehaviour:
   mainText: {fileID: 0}
   nameText: {fileID: 0}
   faces:
-  - {fileID: 21300000, guid: bc447ad3c4140fe49a6ecee8d3ed825b, type: 3}
   - {fileID: 21300000, guid: a2e0e25eee18d8642b0a884188bee224, type: 3}
   - {fileID: 21300000, guid: 5909e5f44f8b83d43b99db9fba764682, type: 3}
   - {fileID: 21300000, guid: 1d910643e7573e24194f02d4aab4f488, type: 3}
@@ -55,5 +54,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e6d6d918b079f5a4a84b2d96c0f7355e, type: 3}
   - {fileID: 21300000, guid: c638f08d5aa2bbe4587b6ed28ff351b6, type: 3}
   - {fileID: 21300000, guid: e212c698e56300b4b96c6f5cff841658, type: 3}
+  - {fileID: 21300000, guid: bc447ad3c4140fe49a6ecee8d3ed825b, type: 3}
   Character: {fileID: 0}
   animator: {fileID: 0}

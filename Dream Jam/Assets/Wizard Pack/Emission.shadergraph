@@ -621,8 +621,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -696.0000610351563,
-            "y": 78.9999771118164,
+            "x": -687.0,
+            "y": 311.0,
             "width": 107.0,
             "height": 34.0
         }
@@ -1595,10 +1595,10 @@
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
+    "hlslDeclarationOverride": 2,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"909191aa1b02f9142949e7c4465e8c29\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"eb9985f784669be4ca6d31da976e9f1c\",\"type\":3}}",
         "m_Guid": ""
     },
     "m_Modifiable": true,
@@ -2902,11 +2902,11 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"a992907bcf23f2343ba52fd35f2fe00c\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
         "m_Guid": ""
     },
     "m_Modifiable": true,
-    "m_DefaultType": 0
+    "m_DefaultType": 1
 }
 
 {
@@ -3193,13 +3193,13 @@
     },
     "m_Name": "GlitchIntensity",
     "m_DefaultReferenceName": "Vector1_f7a19bc098de40cfba17a3ffd2c7d853",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "_Intensity",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 0.009999999776482582,
+    "m_Value": 0.0,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
