@@ -40,7 +40,7 @@ public class Enemy : MonoBehaviour
     {
         if (death)
         {
-            if (glitching != glitched)
+            if (glitching <= glitched)
             {
                 glitching += Time.deltaTime;
                 glitch.SetFloat("_Intensity", glitching);

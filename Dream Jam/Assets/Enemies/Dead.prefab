@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9003867926178704671}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,13 +46,13 @@ GameObject:
   - component: {fileID: -789934010101846509}
   - component: {fileID: -3805721085989933000}
   - component: {fileID: 5028703805291519903}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3090443174803371552
 Transform:
   m_ObjectHideFlags: 0
@@ -196,7 +196,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &-3805721085989933000
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -244,6 +244,8 @@ MonoBehaviour:
   searchCenter: {fileID: 1601900158063231051}
   searchRadius: 8
   attackRadius: 2.5
+  player: {fileID: 0}
+  attackRate: 2
 --- !u!1 &7383404991901377812
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,7 +255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1601900158063231051}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SearchCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
 
     public int HP = 100;
-    int HPLeft;
+    public int HPLeft;
     public UnityEvent onDeath;
     public Transform attackPoint1;
     public Transform attackPoint2;
@@ -25,6 +25,12 @@ public class PlayerMovement : MonoBehaviour
     public int attackDamage2 = 40;
     bool Attack1 = false;
     bool Attack2 = false;
+    bool isDead = false;
+
+    public float attackRate = 2f;
+    float nextTime = 0f;
+
+    public LevelManager levelMan;
 
     void Awake()
     {
@@ -44,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
+        FindObjectOfType<Camera>().transform.position = gameObject.transform.position;
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
         animator.SetFloat("VerticalVelocity", rb.velocity.y);
@@ -51,13 +58,15 @@ public class PlayerMovement : MonoBehaviour
         {
             jump = true;
         }
-        if (Input.GetButtonDown("Attack1") && Attack1 == true)
+        if (Input.GetButtonDown("Attack1") && Attack1 == true && Time.time>=nextTime)
         {
             ActivateAttack1();
+            nextTime = Time.time + 1f / attackRate;
         }
-        if (Input.GetButtonDown("Attack2") && Attack2 == true)
+        if (Input.GetButtonDown("Attack2") && Attack2 == true && Time.time >= nextTime)
         {
             ActivateAttack2();
+            nextTime = Time.time + 1f / attackRate;
         }
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -70,6 +79,18 @@ public class PlayerMovement : MonoBehaviour
         if (Mathf.Abs(rb.velocity.y) > 2f)
         {
             animator.SetBool("isJumping", true);
+        }
+        if (Input.GetKey(KeyCode.Alpha3))
+        {
+            if (HPLeft < HP)
+            {
+                levelMan.Stamina -= 10;
+                HPLeft += 10;
+            }
+        }
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+
         }
         
     }
@@ -96,25 +117,25 @@ public class PlayerMovement : MonoBehaviour
     void ActivateAttack1()
     {
         animator.SetTrigger("Attack1");
-
+        GetComponent<AudioSource>().Play();
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint1.position, attackRange1, enemyLayers);
 
         foreach(Collider2D enemy in hitEnemies)
         {
-            if (glitch.GetFloat("_Intensity") == 0f) { }
-            enemy.GetComponent<Enemy>().TakeDamage(attackDamage1);
+            if (glitch.GetFloat("_Intensity") == 0f)
+                enemy.GetComponent<Enemy>().TakeDamage(attackDamage1);
         }
     }
     void ActivateAttack2()
     {
         animator.SetTrigger("Attack2");
-
+        GetComponent<AudioSource>().Play();
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint2.position, attackRange2, enemyLayers);
 
         foreach (Collider2D enemy in hitEnemies)
         {
-            if (glitch.GetFloat("_Intensity") == 0f) { }
-            enemy.GetComponent<Enemy>().TakeDamage(attackDamage1);
+            if (glitch.GetFloat("_Intensity") == 0f)
+                enemy.GetComponent<Enemy>().TakeDamage(attackDamage2);
         }
     }
 
@@ -131,9 +152,10 @@ public class PlayerMovement : MonoBehaviour
     {
         animator.SetTrigger("Hit");
         HPLeft -= dam;
-        if (HPLeft <= 0)
+        if (HPLeft <= 0 && isDead == false)
         {
             StartCoroutine(Death());
+            isDead = true;
         }
     }
 

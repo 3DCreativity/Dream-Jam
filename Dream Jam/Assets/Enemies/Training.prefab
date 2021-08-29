@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 4857537968252927336}
   - component: {fileID: 5552367152928644731}
   - component: {fileID: 1649623621572625162}
-  - component: {fileID: -630121185636822494}
   - component: {fileID: 2285431638437379948}
   - component: {fileID: -6909914404862033936}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Training
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: abab2b7bbe2c5ab4ba201b20f33728d7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -129,20 +128,6 @@ MonoBehaviour:
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-630121185636822494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2772366052490815080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744b8a9c343b47a4987a52858c96e3f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  animator: {fileID: 5552367152928644731}
 --- !u!50 &2285431638437379948
 Rigidbody2D:
   serializedVersion: 4
@@ -163,7 +148,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &-6909914404862033936
 BoxCollider2D:
   m_ObjectHideFlags: 0
