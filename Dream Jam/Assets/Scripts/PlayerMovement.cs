@@ -117,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
     void ActivateAttack1()
     {
         animator.SetTrigger("Attack1");
-        GetComponent<AudioSource>().Play();
+        //GetComponent<AudioSource>().Play();
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint1.position, attackRange1, enemyLayers);
 
         foreach(Collider2D enemy in hitEnemies)
@@ -129,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
     void ActivateAttack2()
     {
         animator.SetTrigger("Attack2");
-        GetComponent<AudioSource>().Play();
+        //GetComponent<AudioSource>().Play();
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint2.position, attackRange2, enemyLayers);
 
         foreach (Collider2D enemy in hitEnemies)

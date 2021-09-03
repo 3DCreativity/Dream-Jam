@@ -2209,14 +2209,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1192184255}
     m_Modifications:
-    - target: {fileID: 2984125436967823112, guid: 7429cee0bb8123b46bb664fe2baaeb8e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 465462251}
-    - target: {fileID: 2984125436967823112, guid: 7429cee0bb8123b46bb664fe2baaeb8e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DisplayNextSentence
-      objectReference: {fileID: 0}
     - target: {fileID: 2984125436980551641, guid: 7429cee0bb8123b46bb664fe2baaeb8e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2305,10 +2297,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueBox
       objectReference: {fileID: 0}
-    - target: {fileID: 2984125436980551642, guid: 7429cee0bb8123b46bb664fe2baaeb8e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 4107779310294633181, guid: 7429cee0bb8123b46bb664fe2baaeb8e, type: 3}
+      propertyPath: Conversation.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 465462251}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7429cee0bb8123b46bb664fe2baaeb8e, type: 3}
 --- !u!1 &728027079
