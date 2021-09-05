@@ -1,24 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public Dialogue dialogue;
-    public UnityEvent onEnd;
+    int CurrentDialogue = 0;
+    public Dialogue[] dialogue;
 
-    private void Awake()
-    {
-        if (onEnd == null)
-        {
-            onEnd = new UnityEvent();
-        }
-    }
 
     public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueManagment>().StartDialogue(dialogue, onEnd);
+        FindObjectOfType<DialogueManagment>().StartDialogue(dialogue[CurrentDialogue], dialogue[CurrentDialogue].onEnd);
+        CurrentDialogue++;
     }
 
 }

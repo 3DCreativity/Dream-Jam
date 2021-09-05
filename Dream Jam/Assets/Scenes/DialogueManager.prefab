@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6389955636797733129}
   - component: {fileID: 6389955636797733128}
+  - component: {fileID: 2636405659215493455}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -57,3 +58,31 @@ MonoBehaviour:
   - {fileID: 21300000, guid: bc447ad3c4140fe49a6ecee8d3ed825b, type: 3}
   Character: {fileID: 0}
   animator: {fileID: 0}
+--- !u!114 &2636405659215493455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6389955636797733135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da52f0af6701f1449f545a659aeca48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+  - name: 
+    sentences: []
+    onEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    sentences: []
+    onEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    sentences: []
+    onEnd:
+      m_PersistentCalls:
+        m_Calls: []

@@ -380,6 +380,207 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].name
+      value: Developer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].name
+      value: Cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].name
+      value: Developer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].sentences.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[0]
+      value: Oh man... *yawn* It's getting late...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[1]
+      value: But I need to see the theme for the Brackeys Game Jam before I go to
+        sleep.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[2]
+      value: Who knows, maybe my idea for the game will come from the dream.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[3]
+      value: Am I right Oscar?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[0]
+      value: Meow
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].sentences.Array.data[0]
+      value: Oh, the Jam started!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].sentences.Array.data[1]
+      value: And the theme is... "Into the mystic"?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].sentences.Array.data[2]
+      value: Honestly I can't think much of it right now.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].sentences.Array.data[3]
+      value: I'll think more about it in the morning but for now...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].sentences.Array.data[4]
+      value: '*yawn*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].sentences.Array.data[5]
+      value: ...I'm off to bed.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 584205359}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 465462251}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 536563618}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 465462251}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1841637229}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TriggerDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: changeImage
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GoingToBed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManagment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ChangeImage, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManagment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GoToBed, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6389955636797733128, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: animator
       value: 
@@ -981,7 +1182,51 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &303475681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 303475683}
+  - component: {fileID: 303475682}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &303475682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303475681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161977467689b83458e79a0b2d1842ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
+--- !u!4 &303475683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303475681}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5312017, y: 0.03573066, z: -21.432688}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &325896850
 GameObject:
@@ -1649,8 +1894,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 534810526}
-  - component: {fileID: 534810525}
   - component: {fileID: 534810527}
+  - component: {fileID: 534810525}
   - component: {fileID: 534810528}
   m_Layer: 0
   m_Name: GameManager
@@ -1678,7 +1923,7 @@ MonoBehaviour:
   StartConversation:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 534810527}
+      - m_Target: {fileID: 584205359}
         m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -1713,31 +1958,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 534810524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6da52f0af6701f1449f545a659aeca48, type: 3}
+  m_Script: {fileID: 11500000, guid: d2f54e9aedf9ca940b0955a5769d51b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Developer
-    sentences:
-    - Oh man... *yawn* it's getting late...
-    - But I need to see the theme for the Brackeys Game Jam before I go to sleep.
-    - Who knows, maybe my idea for the game will come from the dream.
-    - Am I right Oscar?
-  onEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 854186799}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!82 &534810528
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1933,7 +2156,7 @@ MonoBehaviour:
   ContinueConversation:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1791292257}
+      - m_Target: {fileID: 584205359}
         m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -2020,6 +2243,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558943986}
   m_CullTransparentMesh: 1
+--- !u!114 &584205359 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+  m_PrefabInstance: {fileID: 131372862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da52f0af6701f1449f545a659aeca48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &623858661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2301,7 +2535,13 @@ PrefabInstance:
       propertyPath: Conversation.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 465462251}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5614627928274836137, guid: 7429cee0bb8123b46bb664fe2baaeb8e, type: 3}
+    - {fileID: 7497474904061895158, guid: 7429cee0bb8123b46bb664fe2baaeb8e, type: 3}
+    - {fileID: 5063571205268127297, guid: 7429cee0bb8123b46bb664fe2baaeb8e, type: 3}
+    - {fileID: 6867388251987324268, guid: 7429cee0bb8123b46bb664fe2baaeb8e, type: 3}
+    - {fileID: 221863396127016064, guid: 7429cee0bb8123b46bb664fe2baaeb8e, type: 3}
+    - {fileID: 7153308222257686692, guid: 7429cee0bb8123b46bb664fe2baaeb8e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7429cee0bb8123b46bb664fe2baaeb8e, type: 3}
 --- !u!1 &728027079
 GameObject:
@@ -2842,37 +3082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da52f0af6701f1449f545a659aeca48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Cat
-    sentences:
-    - '*Meow*'
-  onEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 536563618}
-        m_TargetAssemblyTypeName: ChangeImage, Assembly-CSharp
-        m_MethodName: changeImage
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 465462251}
-        m_TargetAssemblyTypeName: DialogueManagment, Assembly-CSharp
-        m_MethodName: EndDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  dialogue: []
 --- !u!4 &854186800
 Transform:
   m_ObjectHideFlags: 0
@@ -2885,7 +3095,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &864326074
 GameObject:
@@ -4895,7 +5105,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1177949419
 GameObject:
@@ -5203,7 +5413,7 @@ RectTransform:
   - {fileID: 2116553667}
   - {fileID: 1865582034}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5713,7 +5923,7 @@ Transform:
   - {fileID: 1882775483}
   - {fileID: 536563616}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1456586021
 BoxCollider2D:
@@ -6810,7 +7020,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1728292520
 MonoBehaviour:
@@ -7199,41 +7409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da52f0af6701f1449f545a659aeca48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Developer
-    sentences:
-    - Oh, the Jam started...
-    - And the theme is..."Into the mystic"?
-    - Honestly I can't think much of it right now...
-    - Better think about it more in the morning.
-    - For now I'm off to bed.
-  onEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 465462251}
-        m_TargetAssemblyTypeName: DialogueManagment, Assembly-CSharp
-        m_MethodName: EndDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1841637229}
-        m_TargetAssemblyTypeName: GoToBed, Assembly-CSharp
-        m_MethodName: GoingToBed
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  dialogue: []
 --- !u!4 &1791292258
 Transform:
   m_ObjectHideFlags: 0
@@ -7246,7 +7422,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1837284087
 GameObject:
@@ -7532,7 +7708,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1841637229
 MonoBehaviour:
@@ -7688,7 +7864,7 @@ Transform:
   m_LocalScale: {x: 0.584028, y: 0.584028, z: 0.584028}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1901876842
 SpriteRenderer:
@@ -8581,7 +8757,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1561070081111496092, guid: e373edf4c8c9daa43865b0a973d2db10, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1561070081111496092, guid: e373edf4c8c9daa43865b0a973d2db10, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8666,11 +8842,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4234590909896226508, guid: d19755333ef77d142b1eec69a0ddb142, type: 3}
       propertyPath: m_Name
-      value: white_walking_0
+      value: Cat
       objectReference: {fileID: 0}
     - target: {fileID: 4234590909896226511, guid: d19755333ef77d142b1eec69a0ddb142, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4234590909896226511, guid: d19755333ef77d142b1eec69a0ddb142, type: 3}
       propertyPath: m_LocalPosition.x
