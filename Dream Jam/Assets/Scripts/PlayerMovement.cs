@@ -50,7 +50,11 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
-        FindObjectOfType<Camera>().transform.position = gameObject.transform.position;
+        Vector3 cameraPosition;
+        cameraPosition.x = gameObject.transform.position.x;
+        cameraPosition.y = gameObject.transform.position.y;
+        cameraPosition.z = -10;
+        FindObjectOfType<Camera>().transform.position = cameraPosition;
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
         animator.SetFloat("VerticalVelocity", rb.velocity.y);
