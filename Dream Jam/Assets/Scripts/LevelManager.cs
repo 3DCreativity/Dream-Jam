@@ -17,9 +17,17 @@ public class LevelManager : MonoBehaviour
     public TilemapRenderer Effect;
     bool isGlitching = false;
     float random;
+    public float glitchTimeRangeA = 3f;
+    public float glitchTimeRangeB = 10f;
     float staminaRate = 1f;
     float time = 0f;
     public UnityEvent onStart;
+
+    float GenerateRandomNumber(float RangeA, float RangeB)
+    {
+        float generatedNumber = Random.Range(RangeA, RangeB);
+        return generatedNumber;
+    }
 
     void Awake()
     {
@@ -27,7 +35,7 @@ public class LevelManager : MonoBehaviour
         {
             onStart = new UnityEvent();
         }
-        random = Random.Range(3, 10);
+        random = GenerateRandomNumber(glitchTimeRangeA, glitchTimeRangeB);
     }
     void Start()
     {
@@ -61,6 +69,7 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         Player.GetComponent<CircleCollider2D>().enabled = true;
         Player.GetComponent<BoxCollider2D>().enabled = true;
+        random = GenerateRandomNumber(glitchTimeRangeA, glitchTimeRangeB);
         DeactivateGlitch();
         isGlitching = false;
     }
