@@ -34,7 +34,7 @@ public class DialogueManagment : MonoBehaviour
         Character.sprite = faces[7];
         for (int i=0; foundFace == false && i<7; i++)
         {
-            if (dialogue.name == characters[i])
+            if (dialogue.photo == characters[i])
             {
                 Character.sprite = faces[i];
                 foundFace = true;

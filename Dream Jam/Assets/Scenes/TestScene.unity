@@ -1744,25 +1744,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Magician
-    sentences:
-    - It sure'll be interesting...
-    - But I have still got one question.
-  onEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 573641653}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  - name: 
+    sentences: []
+    onEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    sentences: []
+    onEnd:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!4 &215347623
 Transform:
   m_ObjectHideFlags: 0
@@ -1807,36 +1798,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Cat
-    sentences:
-    - Come with me and we'll find out.
-  onEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 45391557}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1364425716}
-        m_TargetAssemblyTypeName: DialogueManagment, Assembly-CSharp
-        m_MethodName: EndDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+  - name: 
+    sentences: []
+    onEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    sentences: []
+    onEnd:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!4 &246219573
 Transform:
   m_ObjectHideFlags: 0
@@ -3050,24 +3021,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Cat
-    sentences:
-    - What is it?
-  onEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 921031154}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  - name: 
+    sentences: []
+    onEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    sentences: []
+    onEnd:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!4 &573641654
 Transform:
   m_ObjectHideFlags: 0
@@ -3485,24 +3448,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Magician
-    sentences:
-    - How did I got here?
-  onEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 246219572}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  - name: 
+    sentences: []
+    onEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    sentences: []
+    onEnd:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!4 &921031155
 Transform:
   m_ObjectHideFlags: 0
@@ -3774,6 +3729,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 451253763}
+--- !u!114 &1622483799 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+  m_PrefabInstance: {fileID: 6389955635433571068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da52f0af6701f1449f545a659aeca48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1705354279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3982,7 +3948,6 @@ GameObject:
   - component: {fileID: 1916483997}
   - component: {fileID: 1916483999}
   - component: {fileID: 1916483996}
-  - component: {fileID: 1916483995}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4010,39 +3975,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -58.15}
   m_SizeDelta: {x: 271.7562, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1916483995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916483993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6da52f0af6701f1449f545a659aeca48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Cat
-    sentences:
-    - Hello there!
-    - I am a spiritual guide meant to guide you through life.
-    - We've got a lot to learn...Lets get started
-  onEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 215347622}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1916483996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4087,7 +4019,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1916483995}
+      - m_Target: {fileID: 1622483799}
         m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -4546,6 +4478,126 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].name
+      value: Unknown
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].name
+      value: Magician
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].name
+      value: Ghost Executor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].sentences.Array.data[0]
+      value: Hello there
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].sentences.Array.data[0]
+      value: Hello
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].sentences.Array.data[0]
+      value: Hello
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1622483799}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1622483799}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1364425716}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TriggerDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TriggerDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManagment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6389955636797733128, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: animator
       value: 

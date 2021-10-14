@@ -25539,50 +25539,98 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[0].name
-      value: Magician
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[1].name
-      value: Cat
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[2].name
-      value: Cat
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[3].name
-      value: Magician
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[4].name
-      value: Cat
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[5].name
-      value: Magician
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[6].name
-      value: Cat
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[7].name
-      value: Magician
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[8].name
-      value: Cat
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[9].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[0].photo
       value: Magician
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[10].name
-      value: Magician
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[11].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[1].photo
+      value: Cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[2].photo
+      value: Cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].photo
+      value: Magician
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[4].photo
+      value: Cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[5].photo
+      value: Magician
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[6].photo
+      value: Cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[7].photo
+      value: Magician
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[8].photo
+      value: Cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[9].photo
+      value: Magician
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[10].photo
+      value: Magician
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[11].photo
       value: Magician
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
@@ -25623,7 +25671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[9].sentences.Array.size
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[10].sentences.Array.size
@@ -25731,11 +25779,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[9].sentences.Array.data[4]
-      value: '"Developed by Developer"'
+      value: This is developed by... me?
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[9].sentences.Array.data[5]
-      value: This is developed by... me?
+      value: What is this place?
       objectReference: {fileID: 0}
     - target: {fileID: 2636405659215493455, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[9].sentences.Array.data[6]
@@ -26442,12 +26490,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - name: 
+  - photo: 
+    name: 
     sentences: []
     onEnd:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
+  - photo: 
+    name: 
     sentences: []
     onEnd:
       m_PersistentCalls:

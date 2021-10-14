@@ -6,6 +6,7 @@ using UnityEngine.Events;
 [System.Serializable]
 public class Dialogue 
 {
+    public string photo;
     public string name;
 
     [TextArea(2,10)]
