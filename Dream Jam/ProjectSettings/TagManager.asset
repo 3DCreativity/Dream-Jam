@@ -8,7 +8,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - Player
@@ -43,6 +43,12 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2852268459
+    locked: 0
+  - name: Additions
+    uniqueID: 225914423
+    locked: 0
+  - name: Grass
+    uniqueID: 1661374379
     locked: 0
   - name: Enemy
     uniqueID: 963950841

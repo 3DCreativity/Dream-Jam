@@ -43,11 +43,11 @@ public class PlayerMovement : MonoBehaviour
             onDeath = new UnityEvent();
         }
     }
-    private void OnTriggerEnter2D(Collider2D TriggerGlitch)
-    {
-        //if (TriggerGlitch.collider.name == "Player")
-            FindObjectOfType<LevelManager>().GetComponent<LevelManager>().ActivateGlitch();
-    }
+    //private void OnTriggerEnter2D(Collider2D TriggerGlitch)
+    //{
+    //    //if (TriggerGlitch.collider.name == "Player")
+    //        FindObjectOfType<LevelManager>().GetComponent<LevelManager>().ActivateGlitch();
+    //}
     void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
@@ -67,11 +67,11 @@ public class PlayerMovement : MonoBehaviour
             ActivateAttack2();
             nextTime = Time.time + 1f / attackRate;
         }
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.JoystickButton4))
         {
             StartCoroutine(EnableAttack1());
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.JoystickButton5))
         {
             StartCoroutine(EnableAttack2());
         }
@@ -79,13 +79,22 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isJumping", true);
         }
-        if (Input.GetKey(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             if (HPLeft < HP)
             {
+                glitch.SetFloat("_Intensity", 0.01f);
                 levelMan.Stamina -= 10;
                 HPLeft += 10;
             }
+            else
+            {
+                glitch.SetFloat("_Intensity", 0f);
+            }
+        }
+        if (Input.GetKeyUp(KeyCode.Alpha3))
+        {
+            glitch.SetFloat("_Intensity", 0f);
         }
         if (Input.GetKey(KeyCode.LeftShift))
         {
