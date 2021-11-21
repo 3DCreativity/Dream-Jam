@@ -8,7 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 6bfbb66529dea754dbc5fcb888db26f6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/Weird Dream.unity
+    guid: 16113e1f9589d6b47b2e76882c16dff6
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: 844bb9afcd23f294aac0f08593f43100
   m_configObjects: {}

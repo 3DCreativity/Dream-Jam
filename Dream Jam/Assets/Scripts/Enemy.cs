@@ -5,12 +5,14 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int maxHealth = 100;
+    [SerializeField]
     int currentHealth;
     public Animator animator;
     Material glitch;
     float glitched = 1f;
     float glitching = 0f;
     bool death = false;
+    public bool drawn = false;
 
     // Start is called before the first frame update
     void Start()

@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class LevelLoader : MonoBehaviour
 {
@@ -48,7 +49,7 @@ public class LevelLoader : MonoBehaviour
             {
                 Finished.text = "Press any button to continue";
                 progressText.text = "";
-                if (Input.anyKeyDown)
+                if (Gamepad.current.aButton.wasPressedThisFrame)
                 {
                     operation.allowSceneActivation = true;
                 }

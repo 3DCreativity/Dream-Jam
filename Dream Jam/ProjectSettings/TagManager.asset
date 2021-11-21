@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Hazard
+  - Arrow
   layers:
   - Default
   - TransparentFX
@@ -44,12 +46,15 @@ TagManager:
   - name: Player
     uniqueID: 2852268459
     locked: 0
+  - name: Enemy
+    uniqueID: 963950841
+    locked: 0
+  - name: Ground
+    uniqueID: 1076882331
+    locked: 0
   - name: Additions
     uniqueID: 225914423
     locked: 0
   - name: Grass
     uniqueID: 1661374379
-    locked: 0
-  - name: Enemy
-    uniqueID: 963950841
     locked: 0

@@ -13,6 +13,7 @@ public class DialogueManagment : MonoBehaviour
     public Animator animator;
     private Queue<string> sentences;
     UnityEvent onEnd;
+    string Developer;
 
     private void Awake()
     {
@@ -20,6 +21,7 @@ public class DialogueManagment : MonoBehaviour
         {
             onEnd = new UnityEvent();
         }
+        Developer = GameObject.FindObjectOfType<GameManager>().developerName;
     }
     // Start is called before the first frame update
     void Start()
@@ -43,6 +45,10 @@ public class DialogueManagment : MonoBehaviour
 
         nameText.text = dialogue.name;
 
+        if (dialogue.photo == "Developer")
+        {
+            nameText.text = Developer;
+        }
         sentences.Clear();
 
         onEnd = onEnding;

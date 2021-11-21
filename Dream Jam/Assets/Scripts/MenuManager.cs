@@ -9,15 +9,6 @@ public class MenuManager : MonoBehaviour
     public GameObject ControllsMenu;
     public GameObject CreditsMenu;
     public Animator animator;
-    public UnityEvent StartConversation;
-
-    private void Awake()
-    {
-        if (StartConversation == null)
-        {
-            StartConversation = new UnityEvent();
-        }
-    }
 
     public void DisplayControllsMenu()
     {
@@ -54,7 +45,7 @@ public class MenuManager : MonoBehaviour
         animator.SetTrigger("isPlaying");
         yield return new WaitForSeconds(1);
         MainMenu.SetActive(false);
-        StartConversation.Invoke();
+        GameObject.FindObjectOfType<DialogueTrigger>().TriggerDialogue();
     }
 
 }
