@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 1308213532032778048}
   m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -244,6 +244,7 @@ MonoBehaviour:
   runSpeed: 5
   HP: 100
   HPLeft: 0
+  healing: 0
   onDeath:
     m_PersistentCalls:
       m_Calls:
@@ -265,11 +266,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   attackRange1: 3
-  attackDamage1: 40
   attackRange2: 1.24
+  attackDamage1: 40
   attackDamage2: 20
+  pullForceIntensity: 2
+  HPSlider: {fileID: 0}
+  Focus: {fileID: 0}
+  focus: 100
+  focusTop: 0
+  focusLeft: 0
   attackRate: 2
   levelMan: {fileID: 0}
+  camEffects: {fileID: 0}
 --- !u!70 &1308213532032778048
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

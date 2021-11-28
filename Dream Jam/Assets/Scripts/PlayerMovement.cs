@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public int HPLeft;
     [SerializeField]
     private bool healing;
+    bool healed = true;
     public UnityEvent onDeath;
     public Transform attackPoint1;
     public Transform attackPoint2;
@@ -33,9 +34,9 @@ public class PlayerMovement : MonoBehaviour
     bool Attack2 = false;
     bool isDead = false;
     [SerializeField]
-    Slider HPSlider;
+    Image HPSlider;
     [SerializeField]
-    Slider Focus;
+    Image Focus;
     public int focus = 100;
     [SerializeField]
     int focusTop;
@@ -54,6 +55,10 @@ public class PlayerMovement : MonoBehaviour
 
     private PlayerInputActions Input;
     Color color;
+
+    public bool focused = false;
+    public bool movelock = false;
+    public bool jumplock = false;
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -79,8 +84,25 @@ public class PlayerMovement : MonoBehaviour
         Input.Player.EnableAttack2.performed += EnblAttack2;
         Input.Player.Heal.performed += Heal;
         Input.Player.Heal.canceled += ctx => healing = false;
-        Input.Player.Movement.performed += ctx => horizontalMove = ctx.ReadValue<Vector2>().x * runSpeed;
+        Input.Player.Movement.performed += ctx =>
+        {
+            if (movelock == false)
+            {
+                horizontalMove = ctx.ReadValue<Vector2>().x * runSpeed;
+            }
+        };
         Input.Player.Movement.canceled += ctx => horizontalMove = 0f;
+        Input.Player.Focus.performed += Focusing;
+        Input.Player.Interact.performed += Interact;
+    }
+    private void OnEnable()
+    {
+        GameObject.FindObjectOfType<SettingsManager>().LoadUserRebinds(Input.asset);
+        Input.Player.Enable();
+    }
+    private void OnDisable()
+    {
+        Input.Player.Disable();
     }
     //private void OnTriggerEnter2D(Collider2D TriggerGlitch)
     //{
@@ -90,25 +112,35 @@ public class PlayerMovement : MonoBehaviour
     //Control Actrions
     private void Jump(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && jumplock == false)
             jump = true;
     }
-
+    private void Focusing(InputAction.CallbackContext context)
+    {
+        if (context.performed && focused == false)
+            GameObject.FindObjectOfType<Tuthor>().Focus_Discover();
+            focused = true;
+    }
+    private void Interact(InputAction.CallbackContext context)
+    {
+        if (context.performed && GameObject.FindObjectOfType<InteractionDisplay>().able)
+            GameObject.FindObjectOfType<InteractionDisplay>().Interact();
+    }
     private void EnblAttack1(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && focused)
             StartCoroutine(EnableAttack1());
     }
 
     private void EnblAttack2(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && focused)
             StartCoroutine(EnableAttack2());
     }
 
     private void A1(InputAction.CallbackContext context)
     {
-        if (context.performed && Attack1 == true && Time.time >= nextTime)
+        if (context.performed && Attack1 == true && Time.time >= nextTime && focused)
         {
             StopCoroutine(ActivateAttack1());
             StartCoroutine(ActivateAttack1());
@@ -118,7 +150,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void A2(InputAction.CallbackContext context)
     {
-        if (context.performed && Attack2 == true && Time.time >= nextTime)
+        if (context.performed && Attack2 == true && Time.time >= nextTime && focused)
         {
             StopCoroutine(ActivateAttack2());
             StartCoroutine(ActivateAttack2());
@@ -147,6 +179,14 @@ public class PlayerMovement : MonoBehaviour
     public void EnableControls()
     {
         Input.Player.Enable();
+    }
+    public void EnableGlitch()
+    {
+        glitch.SetFloat("_Intensity", 0.02f);
+    }
+    public void DisableGlitch()
+    {
+        glitch.SetFloat("_Intensity", 0f);
     }
     void Update()
     {
@@ -236,8 +276,8 @@ public class PlayerMovement : MonoBehaviour
         {
             focusLeft = focusTop;
         }
-        HPSlider.value = HP+(HPLeft - HP);
-        Focus.value = focus+(focusLeft-focus);
+        HPSlider.fillAmount = (HP+(HPLeft - HP))/100f;
+        Focus.fillAmount = (focus+(focusLeft-focus))/100f;
         if (focus > 100)
         {
             Rect FocusWidth = Focus.GetComponent<RectTransform>().rect;
@@ -255,10 +295,16 @@ public class PlayerMovement : MonoBehaviour
         {
             controller.SetLightBarColor(color);
         }
-        else
+        else 
         {
-            controller.SetLightBarColor(Color.green);
+            if (HPLeft > HP * 0.66)
+                controller.SetLightBarColor(Color.green);
+            else if (HPLeft > HP * 0.33)
+                controller.SetLightBarColor(Color.yellow);
+            else
+                controller.SetLightBarColor(Color.red);
         }
+        
         if (healing)
         {
             HPLeft += Mathf.CeilToInt(Time.deltaTime);
@@ -273,6 +319,12 @@ public class PlayerMovement : MonoBehaviour
             {
                 glitch.SetFloat("_Intensity", 0.01f);
             }
+            healed = false;
+        }
+        else if (healed == false)
+        {
+            glitch.SetFloat("_Intensity", 0f);
+            healed = true;
         }
 
 
@@ -280,7 +332,7 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator EnableAttack1()
     {
         glitch.SetFloat("_Intensity", 0.01f);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(.5f);
         glitch.SetFloat("_Intensity", 0f);
         if (Attack1 == true)
             Attack1 = false;
@@ -290,7 +342,7 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator EnableAttack2()
     {
         glitch.SetFloat("_Intensity", 0.01f);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(.5f);
         glitch.SetFloat("_Intensity", 0f);
         if (Attack2 == true)
             Attack2 = false;
@@ -309,6 +361,7 @@ public class PlayerMovement : MonoBehaviour
             if (glitch.GetFloat("_Intensity") == 0f)
                 enemy.GetComponent<Enemy>().TakeDamage(attackDamage2);
         }
+        focusLeft -= 5;
     }
     IEnumerator ActivateAttack1()
     {
@@ -329,13 +382,18 @@ public class PlayerMovement : MonoBehaviour
         
         //GetComponent<AudioSource>().Play();
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint1.position, attackRange1, enemyLayers);
-
+        foreach(Collider2D enemy in drawnEnemies)
+        {
+            enemy.GetComponent<Enemy>().drawn = false;
+        }
         foreach (Collider2D enemy in hitEnemies)
         {
+            
             float distance = Vector2.Distance(attackPoint1.transform.position, enemy.transform.position);
             if (glitch.GetFloat("_Intensity") == 0f)
-                enemy.GetComponent<Enemy>().TakeDamage(Mathf.RoundToInt(attackDamage1/(100*distance)));
+                enemy.GetComponent<Enemy>().TakeDamage(attackDamage1);
         }
+        focusLeft -= 20;
     }
 
     private void OnDrawGizmosSelected()

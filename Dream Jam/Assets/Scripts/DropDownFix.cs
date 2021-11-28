@@ -14,7 +14,7 @@ public class DropDownFix : MonoBehaviour
 
         if (droplist != null)
         {
-            droplist.GetComponent<Canvas>().sortingLayerName = sortingLayer;
+            droplist.GetComponent<Canvas>().overrideSorting = false;
         }
     }
 }

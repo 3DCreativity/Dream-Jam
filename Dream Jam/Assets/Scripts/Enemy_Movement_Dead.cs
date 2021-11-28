@@ -11,9 +11,11 @@ public class Enemy_Movement_Dead : MonoBehaviour
     public Transform searchCenter;
     public float searchRadius;
     public float attackRadius;
+    public int attackDamage = 15;
     float horizontalMove = 0f;
     public Transform player;
-    public float attackRate = 2f;
+    [SerializeField]
+    float attackRate = 5f;
     float nextTimeLimit = 0f;
     
     // Start is called before the first frame update
@@ -29,8 +31,27 @@ public class Enemy_Movement_Dead : MonoBehaviour
     }
     void DamagePlayer()
     {
-        animator.SetTrigger("Attack");
-        player.GetComponent<PlayerMovement>().Damage(15);
+        if (gameObject.name == "Dead")
+        {
+            animator.SetTrigger("Attack");
+        }
+        else
+        {
+            int Rand = Random.RandomRange(1, 4);
+            if (Rand == 1)
+            {
+                animator.SetTrigger("Attack1");
+            }
+            if (Rand == 2)
+            {
+                animator.SetTrigger("Attack2");
+            }
+            if (Rand == 3)
+            {
+                animator.SetTrigger("Attack3");
+            }
+        }
+        player.GetComponent<PlayerMovement>().Damage(attackDamage);
         
     }
     private void OnDrawGizmosSelected()
@@ -49,17 +70,31 @@ public class Enemy_Movement_Dead : MonoBehaviour
         Collider2D[] attack = Physics2D.OverlapCircleAll(searchCenter.position, attackRadius, PlayerMask);
         if (Vector2.Distance(searchCenter.position, player.position) > attackRadius && Vector2.Distance(searchCenter.position, player.position)<searchRadius)
         {
-            if (searchCenter.position.x - player.position.x > 0) 
-                horizontalMove = -speed;
+            if (GetComponent<Enemy>().drawn == false)
+            {
+                if (searchCenter.position.x - player.position.x > 0)
+                    horizontalMove = -speed;
+                else
+                    horizontalMove = speed;
+            }
+
             else
-                horizontalMove = speed;
+            {
+                if (searchCenter.position.x - player.position.x > 0)
+                    horizontalMove = speed/3;
+                else
+                    horizontalMove = -speed/3;
+            }
         }    
         else if (Vector2.Distance(searchCenter.position, player.position)<attackRadius)
         {
-            if (Time.time >= nextTimeLimit)
+            if (GetComponent<Enemy>().drawn == false)
             {
-                DamagePlayer();
-                nextTimeLimit = Time.time + 1f / attackRate;
+                if (Time.time >= nextTimeLimit)
+                {
+                    DamagePlayer();
+                    nextTimeLimit = Time.time + 1f / attackRate;
+                }
             }
         }
         else

@@ -11,12 +11,21 @@ public class DialogueManagment : MonoBehaviour
     public Sprite[] faces;
     public Image Character;
     public Animator animator;
+    public int CurrentDialogue = 0;
     private Queue<string> sentences;
     UnityEvent onEnd;
     string Developer;
+    bool startedDialogue = false;
+    [SerializeField]
+    string Language;
+    [SerializeField]
+    DialogueTrigger English;
+    [SerializeField]
+    DialogueTrigger Bulgarian;
 
     private void Awake()
     {
+        Language = GameObject.FindObjectOfType<GameManager>().Language;
         if (onEnd == null)
         {
             onEnd = new UnityEvent();
@@ -28,8 +37,22 @@ public class DialogueManagment : MonoBehaviour
     {
         sentences = new Queue<string>();
     }
+    private void Update()
+    {
+        Language = GameObject.FindObjectOfType<GameManager>().Language;
+        if (Language == "English" && startedDialogue == false && English.enabled == false) {
+            Bulgarian.enabled = false;
+            English.enabled = true;
+        } 
+        else if (Language == "Български" && startedDialogue == false && Bulgarian.enabled == false)
+        {
+            English.enabled = false;
+            Bulgarian.enabled = true;
+        }
+    }
     public void StartDialogue(Dialogue dialogue, UnityEvent onEnding)
     {
+        startedDialogue = true;
         animator.SetBool("isOpen", true);
         string[] characters = { "Magician", "Developer", "Cat", "Archer", "Ghost Executor", "Warrior", "Evil Wizard", "Evil Wizard 2" };
         bool foundFace = false;
@@ -45,7 +68,7 @@ public class DialogueManagment : MonoBehaviour
 
         nameText.text = dialogue.name;
 
-        if (dialogue.photo == "Developer")
+        if ((dialogue.photo == "Developer" || dialogue.photo == "Magician") && nameText.text == "")
         {
             nameText.text = Developer;
         }
@@ -85,11 +108,23 @@ public class DialogueManagment : MonoBehaviour
     }
     void EndCharacterDialogue()
     {
+        startedDialogue = false;
         onEnd.Invoke();
     }
 
     public void EndDialogue()
     {
         animator.SetBool("isOpen", false);
+    }
+    public void TriggerDialogue()
+    {
+        if (Language == "Български")
+        {
+            Bulgarian.TriggerDialogue();
+        }
+        if (Language == "English")
+        {
+            English.TriggerDialogue();
+        }
     }
 }

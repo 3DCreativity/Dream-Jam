@@ -47,9 +47,9 @@ public class LevelLoader : MonoBehaviour
             progressText.text = progress * 100f + "%";
             if (operation.progress >= .9f)
             {
-                Finished.text = "Press any button to continue";
+                Finished.text = "Press Enter/X button to continue";
                 progressText.text = "";
-                if (Gamepad.current.aButton.wasPressedThisFrame)
+                if (Gamepad.current.aButton.wasPressedThisFrame || Keyboard.current.enterKey.wasPressedThisFrame)
                 {
                     operation.allowSceneActivation = true;
                 }

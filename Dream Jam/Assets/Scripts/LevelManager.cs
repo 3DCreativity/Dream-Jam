@@ -15,6 +15,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     SpriteRenderer BG;
     [SerializeField]
+    SpriteRenderer BG2;
+    [SerializeField]
     GameObject Player;
     [SerializeField]
     TilemapRenderer Effect;
@@ -22,6 +24,7 @@ public class LevelManager : MonoBehaviour
     TilemapRenderer Collidable;
     [SerializeField]
     TilemapRenderer Additions;
+    public bool GlitchEffects = true;
 
     bool isGlitching = false;
     float random;
@@ -58,11 +61,13 @@ public class LevelManager : MonoBehaviour
         if (Focus <= 80 && Focus >= 60)
         {
             BG.material.SetFloat("_Intensity", 0.02f);
+            BG2.material.SetFloat("_Intensity", 0.02f);
             Effect.enabled = false;
         }
         else if (Focus > 80)
         {
             BG.material.SetFloat("_Intensity", 0f);
+            BG2.material.SetFloat("_Intensity", 0f);
         }
         if (Focus < 60 && Focus >= 40)
         {

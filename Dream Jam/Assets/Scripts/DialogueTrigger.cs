@@ -8,7 +8,14 @@ public class DialogueTrigger : MonoBehaviour
     int CurrentDialogue = 0;
     public Dialogue[] dialogue;
 
-
+    private void OnEnable()
+    {
+        CurrentDialogue = GameObject.FindObjectOfType<DialogueManagment>().CurrentDialogue;
+    }
+    private void Update()
+    {
+        GameObject.FindObjectOfType<DialogueManagment>().CurrentDialogue = CurrentDialogue;
+    }
     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManagment>().StartDialogue(dialogue[CurrentDialogue], dialogue[CurrentDialogue].onEnd);

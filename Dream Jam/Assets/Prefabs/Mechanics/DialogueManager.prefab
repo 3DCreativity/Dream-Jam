@@ -1,5 +1,139 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4698576393569606318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2095942639744622222}
+  - component: {fileID: 6935416422787537641}
+  m_Layer: 0
+  m_Name: English
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2095942639744622222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4698576393569606318}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6389955636797733129}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6935416422787537641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4698576393569606318}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da52f0af6701f1449f545a659aeca48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentDialogue: 0
+  dialogue:
+  - photo: Developer
+    name: 
+    sentences:
+    - Oh man... *yawn* It's getting late...
+    - But I need to see the theme for the Game Jam before I go to sleep.
+    - Who knows, maybe my idea for the game will come from the dream.
+    - Am I right Oscar?
+    onEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6935416422787537641}
+          m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+          m_MethodName: TriggerDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - photo: Cat
+    name: Oscar
+    sentences:
+    - Meow
+    onEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueManagment, Assembly-CSharp
+          m_MethodName: EndDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: ChangeImage, Assembly-CSharp
+          m_MethodName: changeImage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - photo: Developer
+    name: 
+    sentences:
+    - Oh, the Jam started!
+    - And the theme is... "Secrets of the Mystic"?
+    - Honestly I can't think much of it right now.
+    - I'll think more about it in the morning but for now...
+    - '*yawn*'
+    - ...I'm off to bed.
+    onEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueManagment, Assembly-CSharp
+          m_MethodName: EndDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GoToBed, Assembly-CSharp
+          m_MethodName: GoingToBed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6389955636797733135
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,7 +144,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6389955636797733129}
   - component: {fileID: 6389955636797733128}
-  - component: {fileID: 2636405659215493455}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -28,7 +161,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 518.81323, y: 392.6882, z: -24.530163}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1861823659576930332}
+  - {fileID: 2095942639744622222}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -58,31 +193,152 @@ MonoBehaviour:
   - {fileID: 21300000, guid: bc447ad3c4140fe49a6ecee8d3ed825b, type: 3}
   Character: {fileID: 0}
   animator: {fileID: 0}
---- !u!114 &2636405659215493455
+  CurrentDialogue: 0
+  Language: 
+  English: {fileID: 6935416422787537641}
+  Bulgarian: {fileID: 8638940428123579226}
+--- !u!1 &7530834640053680172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1861823659576930332}
+  - component: {fileID: 8638940428123579226}
+  m_Layer: 0
+  m_Name: Bulgarian
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1861823659576930332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7530834640053680172}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6389955636797733129}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8638940428123579226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6389955636797733135}
-  m_Enabled: 1
+  m_GameObject: {fileID: 7530834640053680172}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6da52f0af6701f1449f545a659aeca48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentDialogue: 0
   dialogue:
-  - name: 
-    sentences: []
+  - photo: Developer
+    name: 
+    sentences:
+    - "\u0427\u043E\u0432\u0435\u0447\u0435... *\u043F\u0440\u043E\u0437\u044F\u0432\u043A\u0430*
+      \u0417\u0430\u043F\u043E\u0447\u0432\u0430 \u0434\u0430 \u0441\u0442\u0430\u0432\u0430
+      \u043A\u044A\u0441\u043D\u043E..."
+    - "\u041D\u043E \u0442\u0440\u044F\u0431\u0432\u0430 \u0434\u0430 \u0432\u0438\u0434\u044F
+      \u0442\u0435\u043C\u0430\u0437\u0430 \u0437\u0430 Game Jam-\u0430 \u043F\u0440\u0435\u0434\u0438
+      \u0434\u0430 \u0441\u0438 \u043B\u0435\u0433\u043D\u0430."
+    - "\u041A\u043E\u0439 \u0437\u043D\u0430\u0435, \u043C\u043E\u0436\u0435 \u0438\u0434\u0435\u044F\u0442\u0430
+      \u043C\u0438 \u0437\u0430 \u0438\u0433\u0440\u0430\u0442\u0430 \u0434\u0430
+      \u0434\u043E\u0439\u0434\u0435 \u043E\u0442 \u0441\u044A\u043D\u044F \u043C\u0438."
+    - "\u041F\u0440\u0430\u0432 \u043B\u0438 \u0441\u044A\u043C \u041E\u0441\u043A\u044A\u0440?"
     onEnd:
       m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    sentences: []
+        m_Calls:
+        - m_Target: {fileID: 8638940428123579226}
+          m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+          m_MethodName: TriggerDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - photo: Cat
+    name: "\u041E\u0441\u043A\u044A\u0440"
+    sentences:
+    - "\u041C\u044F\u0443"
     onEnd:
       m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    sentences: []
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueManagment, Assembly-CSharp
+          m_MethodName: EndDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: ChangeImage, Assembly-CSharp
+          m_MethodName: changeImage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - photo: Developer
+    name: 
+    sentences:
+    - "\u0410, Jam-\u0430 \u0437\u0430\u043F\u043E\u0447\u043D\u0430!"
+    - "\u0418 \u0442\u0435\u043C\u0430\u0442\u0430 \u0435... \"\u0422\u0430\u0439\u043D\u0438
+      \u043D\u0430 \u041C\u0438\u0441\u0442\u0438\u0447\u043D\u043E\u0442\u043E\"?"
+    - "\u0427\u0435\u0441\u0442\u043D\u043E \u043D\u0435 \u043C\u043E\u0433\u0430
+      \u0434\u0430 \u0433\u043E \u043C\u0438\u0441\u043B\u044F \u0441\u0435\u0433\u0430."
+    - "\u0429\u0435 \u0433\u043E \u043C\u0438\u0441\u043B\u044F \u043F\u043E\u0432\u0435\u0447\u0435
+      \u043D\u0430 \u0441\u0443\u0442\u0440\u0438\u043D\u0442\u0430, \u043D\u043E
+      \u0437\u0430 \u0441\u0435\u0433\u0430..."
+    - "*\u043F\u0440\u043E\u0437\u044F\u0432\u043A\u0430*"
+    - "...\u0441\u0435 \u043E\u0442\u043F\u0440\u0430\u0432\u044F\u043C \u043A\u044A\u043C
+      \u043B\u0435\u0433\u043B\u043E\u0442\u043E."
     onEnd:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueManagment, Assembly-CSharp
+          m_MethodName: EndDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GoToBed, Assembly-CSharp
+          m_MethodName: GoingToBed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

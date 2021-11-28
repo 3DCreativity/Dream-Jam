@@ -15,11 +15,20 @@ public class Continue : MonoBehaviour
         {
             Conversation = new UnityEvent();
         }
+        
+
     }
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current.enterKey.wasPressedThisFrame || Gamepad.current.aButton.wasPressedThisFrame) {
+        var keyboard = Keyboard.current.enterKey;
+        var gamepad = Gamepad.current.aButton;
+        if (gamepad == null)
+        {
+            gamepad = keyboard;
+        }
+        if (keyboard.wasPressedThisFrame || gamepad.wasPressedThisFrame)
+        {
             Conversation.Invoke();
         }
     }

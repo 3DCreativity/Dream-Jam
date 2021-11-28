@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Tutorial : MonoBehaviour
 {
+    public GameObject interactonText;
     public GameObject Player;
     public GameObject cat;
     public GameObject Executor;
@@ -28,6 +29,12 @@ public class Tutorial : MonoBehaviour
     public void CatCame()
     {
         dialogue.TriggerDialogue();
+        modify = cat.GetComponent<CharacterController2D>();
+        modify.Move(0, false, false);
+    }
+    public void Tree()
+    {
+
     }
     public void JourneyBegins()
     {
@@ -50,4 +57,5 @@ public class Tutorial : MonoBehaviour
     {
 
     }
+    
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
@@ -13,7 +14,15 @@ public class Enemy : MonoBehaviour
     float glitching = 0f;
     bool death = false;
     public bool drawn = false;
-
+    [SerializeField]
+    UnityEvent onDeath;
+    private void Awake()
+    {
+        if(onDeath == null)
+        {
+            onDeath = new UnityEvent();
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +58,7 @@ public class Enemy : MonoBehaviour
             }
             else
             {
+                onDeath.Invoke();
                 Destroy(gameObject);
             }
         }
