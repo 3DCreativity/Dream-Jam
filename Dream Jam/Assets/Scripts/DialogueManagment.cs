@@ -12,7 +12,7 @@ public class DialogueManagment : MonoBehaviour
     public Image Character;
     public Animator animator;
     public int CurrentDialogue = 0;
-    private Queue<string> sentences;
+    Queue<string> sentences = new Queue<string>();
     UnityEvent onEnd;
     string Developer;
     bool startedDialogue = false;
@@ -35,7 +35,7 @@ public class DialogueManagment : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sentences = new Queue<string>();
+
     }
     private void Update()
     {
@@ -72,7 +72,8 @@ public class DialogueManagment : MonoBehaviour
         {
             nameText.text = Developer;
         }
-        sentences.Clear();
+        if (sentences.Count != 0)
+            sentences.Clear();
 
         onEnd = onEnding;
 

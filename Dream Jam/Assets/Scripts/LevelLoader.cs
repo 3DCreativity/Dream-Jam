@@ -13,10 +13,24 @@ public class LevelLoader : MonoBehaviour
     public Text Finished;
     public Animator transitionAnimator;
     public GameObject transition;
+    private DialogueInput Input;
+    bool continued = false;
 
     private void Awake()
     {
         loadingScreen.SetActive(false);
+        Input = new DialogueInput();
+        Input.UI.Enable();
+        Input.UI.Submit.performed += Continuing;
+        Input.UI.Disable();
+
+    }
+    private void Continuing(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            continued = true;
+        }
     }
     public void LoadLevel(int sceneIndex)
     {
@@ -47,11 +61,13 @@ public class LevelLoader : MonoBehaviour
             progressText.text = progress * 100f + "%";
             if (operation.progress >= .9f)
             {
+                Input.UI.Enable();
                 Finished.text = "Press Enter/X button to continue";
                 progressText.text = "";
-                if (Gamepad.current.aButton.wasPressedThisFrame || Keyboard.current.enterKey.wasPressedThisFrame)
+                if (continued)
                 {
                     operation.allowSceneActivation = true;
+                    Input.UI.Disable();
                 }
             }
 

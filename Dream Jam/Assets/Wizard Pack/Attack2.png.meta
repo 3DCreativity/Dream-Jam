@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -318,6 +319,15 @@ TextureImporter:
     secondaryTextures:
     - texture: {fileID: 2800000, guid: 23165b43e71ab014f8b7c0f5c930fedd, type: 3}
       name: _Emission
+    nameFileIdTable:
+      Attack2_5: -1191510351576865934
+      Attack2_6: -8937499057154260928
+      Attack2_11: 1270503724755275024
+      Attack2_4: 5764228812365489207
+      Attack2_9: 9220252021294270350
+      Attack2_8: 1817195990524489003
+      Attack2_7: 5293088307283036655
+      Attack2_3: 5683539909772271658
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

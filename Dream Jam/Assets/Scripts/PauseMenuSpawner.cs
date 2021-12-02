@@ -12,18 +12,18 @@ public class PauseMenuSpawner : MonoBehaviour
     //int num;
     //bool spawned = false;
     bool paused = false;
+    private DialogueInput Input;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        //num = Random.Range(1, 3);
-        var keyboard = Keyboard.current.escapeKey;
-        var gamepad = Gamepad.current.startButton;
-        if (gamepad == null)
-        {
-            gamepad = keyboard;
-        }
-        if (keyboard.wasPressedThisFrame || gamepad.wasPressedThisFrame)
+        Input = new DialogueInput();
+        Input.UI.Enable();
+        Input.UI.Pause.performed += Pause;
+    }
+
+    private void Pause(InputAction.CallbackContext context)
+    {
+        if (context.performed)
         {
             if (paused == false)
             {
@@ -36,6 +36,30 @@ public class PauseMenuSpawner : MonoBehaviour
                 paused = false;
             }
         }
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        //num = Random.Range(1, 3);
+        //var keyboard = Keyboard.current.escapeKey;
+        //var gamepad = Gamepad.current.startButton;
+        //if (gamepad == null)
+        //{
+        //    gamepad = keyboard;
+        //}
+        //if (keyboard.wasPressedThisFrame || gamepad.wasPressedThisFrame)
+        //{
+        //    if (paused == false)
+        //    {
+        //        Pausing();
+        //        paused = true;
+        //    }
+        //    else
+        //    {
+        //        Resuming();
+        //        paused = false;
+        //    }
+        //}
         //void PauseGame()
         //{
         //    Time.timeScale = 0f;

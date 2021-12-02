@@ -51,6 +51,11 @@ public class LevelManager : MonoBehaviour
     }
     void Start()
     {
+        StartCoroutine(Starting_up());
+    }
+    IEnumerator Starting_up()
+    {
+        yield return new WaitForSeconds(.1f);
         onStart.Invoke();
     }
     void Update()

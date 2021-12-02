@@ -375,6 +375,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2932,6 +2933,124 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      country-platform-tiles-example_36: 1732968099135044701
+      country-platform-tiles-example_33: 2491096075343095296
+      country-platform-tiles-example_86: -7349288077816512363
+      country-platform-tiles-example_112: 8165680980594759492
+      country-platform-tiles-example_20: -7431796977606850545
+      country-platform-tiles-example_56: 4589162679173863575
+      country-platform-tiles-example_45: 2652933321345238027
+      country-platform-tiles-example_19: -1038134452973717898
+      country-platform-tiles-example_88: -6645309461702312488
+      country-platform-tiles-example_92: -9060624151662349134
+      country-platform-tiles-example_101: -5570249764344419234
+      country-platform-tiles-example_2: 2326394322638241810
+      country-platform-tiles-example_48: 3429621442244956193
+      country-platform-tiles-example_98: 1351502706193340618
+      country-platform-tiles-example_59: -5418322814868914832
+      country-platform-tiles-example_63: -7185974212260806649
+      country-platform-tiles-example_83: -840884602886351000
+      country-platform-tiles-example_25: -4792496945983385676
+      country-platform-tiles-example_109: -3666712762419235935
+      country-platform-tiles-example_74: -2570609701413715706
+      country-platform-tiles-example_37: -1619657845986694983
+      country-platform-tiles-example_60: -3840298503532250862
+      country-platform-tiles-example_70: 1867546129976890455
+      country-platform-tiles-example_116: -8014583754102578294
+      country-platform-tiles-example_84: -8594462473107249106
+      country-platform-tiles-example_80: -4801047235310595146
+      country-platform-tiles-example_54: 8992570409361436755
+      country-platform-tiles-example_7: 3258108193678176078
+      country-platform-tiles-example_32: -17779210544693757
+      country-platform-tiles-example_71: -4231695167725364351
+      country-platform-tiles-example_108: 7548682212800726427
+      country-platform-tiles-example_65: -8575793215008976048
+      country-platform-tiles-example_68: 2363021949260650008
+      country-platform-tiles-example_110: -4269946733984667524
+      country-platform-tiles-example_5: 6357893422811329067
+      country-platform-tiles-example_12: -1134530015451657200
+      country-platform-tiles-example_4: -5371480145592361108
+      country-platform-tiles-example_66: 6632386305482341135
+      country-platform-tiles-example_82: -3545278251002471459
+      country-platform-tiles-example_94: 1063183122668378799
+      country-platform-tiles-example_51: -6672683098110641255
+      country-platform-tiles-example_35: 8343030519874577368
+      country-platform-tiles-example_46: -719529970755302015
+      country-platform-tiles-example_85: -9033804105529092764
+      country-platform-tiles-example_18: 3644457948287747269
+      country-platform-tiles-example_31: 4745527699315342195
+      country-platform-tiles-example_41: 7633620098892561052
+      country-platform-tiles-example_105: 5607632129363203962
+      country-platform-tiles-example_8: -6936318579037268604
+      country-platform-tiles-example_95: 2549418891307062951
+      country-platform-tiles-example_24: -599176224239010185
+      country-platform-tiles-example_40: -7226137948857035658
+      country-platform-tiles-example_69: -2763313289275095567
+      country-platform-tiles-example_115: -245267075085843128
+      country-platform-tiles-example_21: 1057145442824863612
+      country-platform-tiles-example_39: 1624242193005532063
+      country-platform-tiles-example_34: -3708139528933094020
+      country-platform-tiles-example_55: -1557702732904005837
+      country-platform-tiles-example_78: -8317599505073012952
+      country-platform-tiles-example_81: -4741259579920779638
+      country-platform-tiles-example_10: -4709421839467773157
+      country-platform-tiles-example_89: -2006861219072884751
+      country-platform-tiles-example_113: -3087777361616476646
+      country-platform-tiles-example_75: -8110163563387080280
+      country-platform-tiles-example_53: -9157792928463012862
+      country-platform-tiles-example_106: -4237854016334250087
+      country-platform-tiles-example_6: 3993216693569687190
+      country-platform-tiles-example_72: -7511146391532824936
+      country-platform-tiles-example_90: 8911638231283169870
+      country-platform-tiles-example_44: -4496677842762873442
+      country-platform-tiles-example_16: -4978377134571128970
+      country-platform-tiles-example_93: -4183852240990527913
+      country-platform-tiles-example_11: 7748207043159406144
+      country-platform-tiles-example_29: 38168515021989546
+      country-platform-tiles-example_9: -2336869358473006345
+      country-platform-tiles-example_43: -7024172181506423364
+      country-platform-tiles-example_107: 7022748847108783759
+      country-platform-tiles-example_97: 1892383412707178705
+      country-platform-tiles-example_49: 4930443700478270232
+      country-platform-tiles-example_57: -3456654240135696683
+      country-platform-tiles-example_30: 4261530877799858938
+      country-platform-tiles-example_52: -1358922524197132565
+      country-platform-tiles-example_91: 7724520610192653191
+      country-platform-tiles-example_76: -7608707139008970266
+      country-platform-tiles-example_111: 6593565037946258933
+      country-platform-tiles-example_28: -432280327931489883
+      country-platform-tiles-example_103: -2210709623670456655
+      country-platform-tiles-example_47: 6233818763469198804
+      country-platform-tiles-example_87: 2921070658420304433
+      country-platform-tiles-example_14: 7393401218546125898
+      country-platform-tiles-example_73: -7879278041592483439
+      country-platform-tiles-example_77: 8227524230211445593
+      country-platform-tiles-example_27: -7171119059032861815
+      country-platform-tiles-example_96: 7964111561466777710
+      country-platform-tiles-example_50: 2600272100023791521
+      country-platform-tiles-example_1: -8542236929278528704
+      country-platform-tiles-example_26: -8415475425638509398
+      country-platform-tiles-example_102: -970115535883396849
+      country-platform-tiles-example_23: 3109165286019458386
+      country-platform-tiles-example_15: -613333363440570634
+      country-platform-tiles-example_64: -8515730501379871291
+      country-platform-tiles-example_42: 843727447269232357
+      country-platform-tiles-example_3: -3280767023233562342
+      country-platform-tiles-example_79: -991065797240030138
+      country-platform-tiles-example_104: 2207261021089098668
+      country-platform-tiles-example_0: -205380113790350120
+      country-platform-tiles-example_61: 5242939399822940684
+      country-platform-tiles-example_38: 8098411166919761041
+      country-platform-tiles-example_58: -6853189872849500362
+      country-platform-tiles-example_99: 6542784643846234264
+      country-platform-tiles-example_13: 3459134215042326948
+      country-platform-tiles-example_100: -9077703294074217722
+      country-platform-tiles-example_114: -8017369426635987477
+      country-platform-tiles-example_22: -9079097059472524252
+      country-platform-tiles-example_62: -1498052295758580999
+      country-platform-tiles-example_67: -2760652511214011908
+      country-platform-tiles-example_17: 1685826287973628064
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

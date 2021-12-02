@@ -37,7 +37,7 @@ public class Enemy_Movement_Dead : MonoBehaviour
         }
         else
         {
-            int Rand = Random.RandomRange(1, 4);
+            int Rand = Random.Range(1,4);
             if (Rand == 1)
             {
                 animator.SetTrigger("Attack1");

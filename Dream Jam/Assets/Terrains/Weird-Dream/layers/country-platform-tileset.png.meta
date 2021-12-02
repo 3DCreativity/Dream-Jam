@@ -219,6 +219,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1684,6 +1685,72 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      country-platform-tileset_35: 3154269042689361002
+      country-platform-tileset_1: 6602404767879418991
+      country-platform-tileset_56: -4300184522254162244
+      country-platform-tileset_58: 8170990327295408925
+      country-platform-tileset_31: 8748128942054625773
+      country-platform-tileset_8: -2569334019402829443
+      country-platform-tileset_12: -912285953592701858
+      country-platform-tileset_16: 4379315930069131324
+      country-platform-tileset_33: 8650126242945592918
+      country-platform-tileset_21: -7109316373008550040
+      country-platform-tileset_14: 6423090639213929882
+      country-platform-tileset_40: 4639691438745989195
+      country-platform-tileset_10: -7010614428220986361
+      country-platform-tileset_42: -2006486020805285883
+      country-platform-tileset_57: 5360492541191083540
+      country-platform-tileset_18: 951439255556992652
+      country-platform-tileset_22: -8779171381905486480
+      country-platform-tileset_46: 4696621695530216469
+      country-platform-tileset_64: -4517692455773218436
+      country-platform-tileset_7: 5310138129501898608
+      country-platform-tileset_59: 5925684828057548390
+      country-platform-tileset_17: 890876197327265886
+      country-platform-tileset_63: 5223516773140480383
+      country-platform-tileset_11: 7250969338371714112
+      country-platform-tileset_25: -1123732830367074951
+      country-platform-tileset_54: 8758316536242774004
+      country-platform-tileset_15: 7496986433293151803
+      country-platform-tileset_38: -7950815660602771383
+      country-platform-tileset_62: 3952129550942041449
+      country-platform-tileset_60: 4311636103907290676
+      country-platform-tileset_51: -4497677732145206628
+      country-platform-tileset_32: 4631248450730722983
+      country-platform-tileset_28: -3709027473009340676
+      country-platform-tileset_24: 4260852619309725344
+      country-platform-tileset_3: -2475237379277047118
+      country-platform-tileset_27: -2996417490032829225
+      country-platform-tileset_26: -3426869991707269388
+      country-platform-tileset_61: 5729678177214999882
+      country-platform-tileset_45: 8592426894859639503
+      country-platform-tileset_48: 8370656716163816134
+      country-platform-tileset_13: 1050152429608860081
+      country-platform-tileset_44: -3975173959656553143
+      country-platform-tileset_19: -31738432872945108
+      country-platform-tileset_0: -5816875866298116881
+      country-platform-tileset_43: 829181325298567483
+      country-platform-tileset_50: -7685855039457444813
+      country-platform-tileset_6: 4202469052913085703
+      country-platform-tileset_23: 662365935069668250
+      country-platform-tileset_9: -6362307738241297749
+      country-platform-tileset_4: -8285904625919686716
+      country-platform-tileset_34: 6145324111337373079
+      country-platform-tileset_55: 4312556871125663592
+      country-platform-tileset_53: -2421578971888435166
+      country-platform-tileset_36: 7772364994690681880
+      country-platform-tileset_49: -5242117777871695502
+      country-platform-tileset_29: 1625545230314267780
+      country-platform-tileset_37: 3469499466403549059
+      country-platform-tileset_39: 3719353269599395189
+      country-platform-tileset_5: 7202105222529863672
+      country-platform-tileset_30: 210239796263859951
+      country-platform-tileset_47: 7660414884880043961
+      country-platform-tileset_41: -964891815546592809
+      country-platform-tileset_2: 8145294719457550322
+      country-platform-tileset_20: 4050653110447538676
+      country-platform-tileset_52: -1442324488561771774
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

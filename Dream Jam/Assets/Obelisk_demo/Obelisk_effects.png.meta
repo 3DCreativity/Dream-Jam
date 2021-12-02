@@ -165,6 +165,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -271,7 +272,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8ef89270308949370800000000000000
-      internalID: 8328448749687377896
+      internalID: 8322072990020515483
       vertices: []
       indices: 
       edges: []
@@ -292,7 +293,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 78c113485d37344d0800000000000000
-      internalID: -3151547953346175865
+      internalID: 4675377093382830490
       vertices: []
       indices: 
       edges: []
@@ -313,7 +314,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e79235fbc144205b0800000000000000
-      internalID: -5403681712631502466
+      internalID: 8593069538682424844
       vertices: []
       indices: 
       edges: []
@@ -334,7 +335,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2521cd290ba9b1400800000000000000
-      internalID: 296000283691717202
+      internalID: -4511049725455321244
       vertices: []
       indices: 
       edges: []
@@ -355,7 +356,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9923ef81adafbbf00800000000000000
-      internalID: 1133775545842938521
+      internalID: -5679624845156880666
       vertices: []
       indices: 
       edges: []
@@ -376,7 +377,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fda86a19e1b0a9400800000000000000
-      internalID: 331589748485688031
+      internalID: -1362227257177565559
       vertices: []
       indices: 
       edges: []
@@ -397,7 +398,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f74e0a1e731ba55e0800000000000000
-      internalID: -1920027437553359745
+      internalID: 5677725937795837921
       vertices: []
       indices: 
       edges: []
@@ -418,7 +419,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1a3d748585ba08590800000000000000
-      internalID: -7673945369112751199
+      internalID: 4334888923329451840
       vertices: []
       indices: 
       edges: []
@@ -439,7 +440,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c7bf64ff99cce22b0800000000000000
-      internalID: -5607319524244784260
+      internalID: 410006065742562702
       vertices: []
       indices: 
       edges: []
@@ -460,7 +461,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f5d91c8ac7c5d5d70800000000000000
-      internalID: 9033478118052044127
+      internalID: -4186454899905667764
       vertices: []
       indices: 
       edges: []
@@ -481,7 +482,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c8ec7090668bd0670800000000000000
-      internalID: 8506658019550416524
+      internalID: -5741996652173878381
       vertices: []
       indices: 
       edges: []
@@ -502,7 +503,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 11057a568be9e21e0800000000000000
-      internalID: -2220663051430440943
+      internalID: 8248200096755472606
       vertices: []
       indices: 
       edges: []
@@ -523,7 +524,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: db68befd20fbe96a0800000000000000
-      internalID: -6440500398025636163
+      internalID: 1361116931786564406
       vertices: []
       indices: 
       edges: []
@@ -544,7 +545,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 58a6fae9d0cf4a710800000000000000
-      internalID: 1703763694479960709
+      internalID: 8862253177153949601
       vertices: []
       indices: 
       edges: []
@@ -559,6 +560,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Obelisk_effects_6: 4334888923329451840
+      Obelisk_effects_1: 8593069538682424844
+      Obelisk_effects_2: -4511049725455321244
+      Obelisk_effects_11: 8322072990020515483
+      Obelisk_effects_3: -5679624845156880666
+      Obelisk_effects_7: 4675377093382830490
+      Obelisk_effects_5: 5677725937795837921
+      Obelisk_effects_13: 1361116931786564406
+      Obelisk_effects_10: -5741996652173878381
+      Obelisk_effects_8: 410006065742562702
+      Obelisk_effects_4: -1362227257177565559
+      Obelisk_effects_9: -4186454899905667764
+      Obelisk_effects_14: 8862253177153949601
+      Obelisk_effects_12: 8248200096755472606
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -8,6 +8,10 @@ public class CatMovement : MonoBehaviour
     CharacterController2D controller;
     [SerializeField]
     Animator anim;
+    [SerializeField]
+    string CatStop;
+    [SerializeField]
+    string CatDisappear;
     public float speed = 0f;
     // Start is called before the first frame update
     private void Awake()
@@ -28,12 +32,12 @@ public class CatMovement : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "CatStop")
+        if (collision.gameObject.name == CatStop)
         {
             speed = 0f;
             anim.SetBool("Walk", false);
         }
-        if (collision.gameObject.name == "CatDisapear")
+        if (collision.gameObject.name == CatDisappear)
         {
             Destroy(GameObject.Find("CatStop"));
             Destroy(collision.gameObject);

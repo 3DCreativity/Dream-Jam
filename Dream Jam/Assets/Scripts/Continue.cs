@@ -8,28 +8,32 @@ using UnityEngine.InputSystem;
 public class Continue : MonoBehaviour
 {
     public UnityEvent Conversation;
-
+    [SerializeField]
+    Animator anim;
+    private DialogueInput Input;
     private void Awake()
     {
-        if (Conversation == null)
+        Input = new DialogueInput();
+        Input.UI.Enable();
+        Input.UI.Submit.performed += Continuing;
+    }
+    private void Continuing(InputAction.CallbackContext context)
+    {
+        if (context.performed)
         {
-            Conversation = new UnityEvent();
+            Conversation.Invoke();
         }
-        
-
     }
     // Update is called once per frame
     void Update()
     {
-        var keyboard = Keyboard.current.enterKey;
-        var gamepad = Gamepad.current.aButton;
-        if (gamepad == null)
+        if (anim.GetBool("isOpen") == true)
         {
-            gamepad = keyboard;
+            Input.UI.Enable();
         }
-        if (keyboard.wasPressedThisFrame || gamepad.wasPressedThisFrame)
+        else
         {
-            Conversation.Invoke();
+            Input.UI.Disable();
         }
     }
 

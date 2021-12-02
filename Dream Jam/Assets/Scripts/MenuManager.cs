@@ -65,7 +65,7 @@ public class MenuManager : MonoBehaviour
             if (SettingsMenu.activeInHierarchy)
             {
                 TMP = SettingsTitle.GetComponent<TextMeshProUGUI>();
-                TMP.text = "Настрийки";
+                TMP.text = "Настройки";
                 var SettingsButtons = SettingsMenu.GetComponentsInChildren<Button>();
                 foreach (Button button in SettingsButtons)
                 {

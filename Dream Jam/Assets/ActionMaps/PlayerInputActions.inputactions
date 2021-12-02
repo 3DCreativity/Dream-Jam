@@ -11,7 +11,8 @@
                     "id": "1b21c258-bb2c-443f-a68e-c01efbc36c15",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Movement",
@@ -19,7 +20,8 @@
                     "id": "364b9fe5-8c5d-4b2c-8c81-24d71ef2f8ff",
                     "expectedControlType": "Vector2",
                     "processors": "StickDeadzone,NormalizeVector2",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Attack 1",
@@ -27,7 +29,8 @@
                     "id": "e76855cc-d38a-47b3-9743-f480e237a641",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Attack 2",
@@ -35,7 +38,8 @@
                     "id": "af604a91-f22e-4a87-8469-2d43be9def02",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Enable Attack 1",
@@ -43,7 +47,8 @@
                     "id": "2af8b409-9495-46a0-a99e-ad507f8a63c5",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Enable Attack 2",
@@ -51,7 +56,8 @@
                     "id": "261a2110-bbcf-4c7e-aa6c-3ade9e6e2ce8",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Interact",
@@ -59,7 +65,8 @@
                     "id": "d15f37cd-60c4-40b3-aae3-93d9d4e011a6",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Heal",
@@ -67,7 +74,8 @@
                     "id": "ce338b03-7564-4ca0-a5c9-83cd2203ecee",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Shield",
@@ -75,7 +83,8 @@
                     "id": "958db40b-1db1-401b-8c3a-7eb4ad736cc5",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Focus",
@@ -83,7 +92,8 @@
                     "id": "357bfaac-43ac-42a0-8f64-70c6c5dbeb45",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Hold"
+                    "interactions": "Hold",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -114,7 +124,7 @@
                     "id": "e3dcb2a8-76ad-4e52-bffd-e1551632ff9e",
                     "path": "2DVector",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "NormalizeVector2",
                     "groups": "",
                     "action": "Movement",
                     "isComposite": true,

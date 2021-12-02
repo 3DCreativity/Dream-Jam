@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 40f;
     Material glitch;
     bool jump = false;
-    float horizontalMove;
+    float horizontalMove = 0f;
     Rigidbody2D rb;
 
     public int HP = 100;
@@ -53,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private CameraZoom camEffects;
 
-    private PlayerInputActions Input;
+    private PlayerInputActions player;
     Color color;
 
     public bool focused = false;
@@ -73,36 +73,35 @@ public class PlayerMovement : MonoBehaviour
             onDeath = new UnityEvent();
         }
         
-        var gamepad = (DualShock4GamepadHID)Gamepad.all[0];
         
-        Input = new PlayerInputActions();
-        Input.Player.Enable();
-        Input.Player.Jump.performed += Jump;
-        Input.Player.Attack1.performed += A1;
-        Input.Player.Attack2.performed += A2;
-        Input.Player.EnableAttack1.performed += EnblAttack1;
-        Input.Player.EnableAttack2.performed += EnblAttack2;
-        Input.Player.Heal.performed += Heal;
-        Input.Player.Heal.canceled += ctx => healing = false;
-        Input.Player.Movement.performed += ctx =>
+        player = new PlayerInputActions();
+        player.Player.Enable();
+        player.Player.Jump.performed += Jump;
+        player.Player.Attack1.performed += A1;
+        player.Player.Attack2.performed += A2;
+        player.Player.EnableAttack1.performed += EnblAttack1;
+        player.Player.EnableAttack2.performed += EnblAttack2;
+        player.Player.Heal.performed += Heal;
+        player.Player.Heal.canceled += ctx => healing = false;
+        player.Player.Movement.performed += ctx =>
         {
             if (movelock == false)
             {
                 horizontalMove = ctx.ReadValue<Vector2>().x * runSpeed;
             }
         };
-        Input.Player.Movement.canceled += ctx => horizontalMove = 0f;
-        Input.Player.Focus.performed += Focusing;
-        Input.Player.Interact.performed += Interact;
+        player.Player.Movement.canceled += ctx => horizontalMove = 0f;
+        player.Player.Focus.performed += Focusing;
+        player.Player.Interact.performed += Interact;
     }
     private void OnEnable()
     {
-        GameObject.FindObjectOfType<SettingsManager>().LoadUserRebinds(Input.asset);
-        Input.Player.Enable();
+        //GameObject.FindObjectOfType<SettingsManager>().LoadUserRebinds(Input.asset);
+        player.Player.Enable();
     }
     private void OnDisable()
     {
-        Input.Player.Disable();
+        player.Player.Disable();
     }
     //private void OnTriggerEnter2D(Collider2D TriggerGlitch)
     //{
@@ -174,11 +173,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void DisableControls()
     {
-        Input.Player.Disable();
+        player.Player.Disable();
     }
     public void EnableControls()
     {
-        Input.Player.Enable();
+        player.Player.Enable();
     }
     public void EnableGlitch()
     {
@@ -290,21 +289,24 @@ public class PlayerMovement : MonoBehaviour
         }
         
         color = Random.ColorHSV();
-        var controller = (DualShock4GamepadHID)Gamepad.current;
-        if (glitch.GetFloat("_Intensity") > 0f)
+        if ((DualShock4GamepadHID)Gamepad.current != null)
         {
-            controller.SetLightBarColor(color);
-        }
-        else 
-        {
-            if (HPLeft > HP * 0.66)
-                controller.SetLightBarColor(Color.green);
-            else if (HPLeft > HP * 0.33)
-                controller.SetLightBarColor(Color.yellow);
+            var controller = (DualShock4GamepadHID)Gamepad.current;
+            if (glitch.GetFloat("_Intensity") > 0f)
+            {
+                controller.SetLightBarColor(color);
+            }
+
             else
-                controller.SetLightBarColor(Color.red);
+            {
+                if (HPLeft > HP * 0.66)
+                    controller.SetLightBarColor(Color.green);
+                else if (HPLeft > HP * 0.33)
+                    controller.SetLightBarColor(Color.yellow);
+                else
+                    controller.SetLightBarColor(Color.red);
+            }
         }
-        
         if (healing)
         {
             HPLeft += Mathf.CeilToInt(Time.deltaTime);
