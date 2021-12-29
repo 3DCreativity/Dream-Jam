@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 using System;
 using TMPro;
 using UnityEngine.Audio;
+using System.IO;
+using System.Linq;
 
 public class SettingsManager : MonoBehaviour
 {
@@ -26,9 +28,12 @@ public class SettingsManager : MonoBehaviour
     GameObject Key;
     [SerializeField]
     GameObject Listener;
+    [SerializeField]
+    GameObject languages;
 
     Resolution[] resolutions;
     public Dropdown resolutionsDropdown;
+    public Dropdown languageDropdown;
     public AudioMixer audioMixer;
     private void Awake()
     {
@@ -441,6 +446,12 @@ public class SettingsManager : MonoBehaviour
         resolutionsDropdown.AddOptions(options);
         resolutionsDropdown.value = currentResolutionIndex;
         resolutionsDropdown.RefreshShownValue();
+
+        languageDropdown.ClearOptions();
+        string readFromFilePath = Application.streamingAssetsPath + "Languages" + ".txt";
+        List<string> languages = File.ReadAllLines(readFromFilePath).ToList();
+        languageDropdown.AddOptions(languages);
+
     }
     // Update is called once per frame
     void Update()

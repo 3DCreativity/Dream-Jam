@@ -79,7 +79,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: E
+  m_Text: "\u0415"
 --- !u!1 &31662552067719719
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,7 +1440,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: L1
+  m_Text: LB
 --- !u!1 &636078535626745587
 GameObject:
   m_ObjectHideFlags: 0
@@ -5004,7 +5004,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Triangle
+  m_Text: Y
 --- !u!1 &2052497345750104654
 GameObject:
   m_ObjectHideFlags: 0
@@ -7673,7 +7673,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: L2
+  m_Text: LT
 --- !u!1 &2780105067279018013
 GameObject:
   m_ObjectHideFlags: 0
@@ -8161,7 +8161,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hold R2
+  m_Text: Hold RT
 --- !u!1 &2959908567189410567
 GameObject:
   m_ObjectHideFlags: 0
@@ -9433,7 +9433,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: R1
+  m_Text: RB
 --- !u!1 &3397337972169636357
 GameObject:
   m_ObjectHideFlags: 0
@@ -13618,7 +13618,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: D-Pad Down
+  m_Text: D-Pad/Down
 --- !u!1 &4997526258596123278
 GameObject:
   m_ObjectHideFlags: 0
@@ -14009,7 +14009,9 @@ MonoBehaviour:
   XBOX: {fileID: 6277179151549516731}
   Key: {fileID: 3179560572341688853}
   Listener: {fileID: 493396735030909662}
+  languages: {fileID: 0}
   resolutionsDropdown: {fileID: 2744427175778307888}
+  languageDropdown: {fileID: 5722509967207627850}
   audioMixer: {fileID: 24100000, guid: b889aa9e2a40d0a43a965193202df151, type: 2}
 --- !u!114 &2349840920919622870
 MonoBehaviour:
@@ -14461,7 +14463,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Z
+  m_Text: "\u0417"
 --- !u!1 &5370723360130795802
 GameObject:
   m_ObjectHideFlags: 0
@@ -14738,7 +14740,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: L2
+  m_Text: LT
 --- !u!1 &5621304166740845145
 GameObject:
   m_ObjectHideFlags: 0
@@ -15660,7 +15662,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Circle
+  m_Text: B
 --- !u!1 &6013195701193427004
 GameObject:
   m_ObjectHideFlags: 0
@@ -20758,7 +20760,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hold R2
+  m_Text: Hold RT
 --- !u!1 &7013177926076916497
 GameObject:
   m_ObjectHideFlags: 0
@@ -20875,7 +20877,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: X
+  m_Text: "\u042C"
 --- !u!1 &7046326669328472092
 GameObject:
   m_ObjectHideFlags: 0
@@ -21944,7 +21946,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Square
+  m_Text: X
 --- !u!1 &7552262694413965733
 GameObject:
   m_ObjectHideFlags: 0
@@ -22024,7 +22026,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Square
+  m_Text: X
 --- !u!1 &7610844968809643019
 GameObject:
   m_ObjectHideFlags: 0
@@ -22903,7 +22905,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: R1
+  m_Text: RB
 --- !u!1 &8000917022745987814
 GameObject:
   m_ObjectHideFlags: 0
@@ -23063,7 +23065,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Circle
+  m_Text: B
 --- !u!1 &8106192683812789674
 GameObject:
   m_ObjectHideFlags: 0
@@ -23412,7 +23414,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: L1
+  m_Text: LB
 --- !u!1 &8208063136486688794
 GameObject:
   m_ObjectHideFlags: 0
@@ -25773,7 +25775,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: D-Pad Down
+  m_Text: D-Pad/Down
 --- !u!1 &8835037737966422455
 GameObject:
   m_ObjectHideFlags: 0
@@ -26085,7 +26087,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Triangle
+  m_Text: Y
 --- !u!1 &8948709386014562981
 GameObject:
   m_ObjectHideFlags: 0
