@@ -1,0 +1,8 @@
+Game Log
+Date:3.3.2022 г. 1:00:42
+
+Language Packs:
+Error: Language Packs: English.language is missing! Reinstallation may be required.
+
+Error: Language Packs: Български.language is missing! Reinstallation may be required.
+
