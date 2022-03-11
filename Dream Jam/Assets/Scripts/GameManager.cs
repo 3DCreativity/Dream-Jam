@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public string developerName;
+    public List<string> loadedLanguages;
     public string Language;
     public bool Bloom = true;
     private static GameManager instance;

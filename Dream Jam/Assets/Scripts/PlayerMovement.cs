@@ -72,8 +72,7 @@ public class PlayerMovement : MonoBehaviour
         {
             onDeath = new UnityEvent();
         }
-        
-        
+        //PlayerSchematics();
         player = new PlayerInputActions();
         player.Player.Enable();
         player.Player.Jump.performed += Jump;
@@ -89,6 +88,36 @@ public class PlayerMovement : MonoBehaviour
             {
                 horizontalMove = ctx.ReadValue<Vector2>().x * runSpeed;
             }
+            else
+            {
+                horizontalMove = 0;
+            }
+        };
+        player.Player.Movement.canceled += ctx => horizontalMove = 0f;
+        player.Player.Focus.performed += Focusing;
+        player.Player.Interact.performed += Interact;
+    }
+    void PlayerSchematics()
+    {
+        player = new PlayerInputActions();
+        player.Player.Enable();
+        player.Player.Jump.performed += Jump;
+        player.Player.Attack1.performed += A1;
+        player.Player.Attack2.performed += A2;
+        player.Player.EnableAttack1.performed += EnblAttack1;
+        player.Player.EnableAttack2.performed += EnblAttack2;
+        player.Player.Heal.performed += Heal;
+        player.Player.Heal.canceled += ctx => healing = false;
+        player.Player.Movement.performed += ctx =>
+        {
+            if (movelock == false)
+            {
+                horizontalMove = ctx.ReadValue<Vector2>().x * runSpeed;
+            }
+            else
+            {
+                horizontalMove = 0;
+            }
         };
         player.Player.Movement.canceled += ctx => horizontalMove = 0f;
         player.Player.Focus.performed += Focusing;
@@ -98,6 +127,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //GameObject.FindObjectOfType<SettingsManager>().LoadUserRebinds(Input.asset);
         player.Player.Enable();
+        //PlayerSchematics();
     }
     private void OnDisable()
     {
@@ -289,24 +319,24 @@ public class PlayerMovement : MonoBehaviour
         }
         
         color = Random.ColorHSV();
-        if ((DualShock4GamepadHID)Gamepad.current != null)
-        {
-            var controller = (DualShock4GamepadHID)Gamepad.current;
-            if (glitch.GetFloat("_Intensity") > 0f)
-            {
-                controller.SetLightBarColor(color);
-            }
+        //if ((DualShock4GamepadHID)Gamepad.current != null)
+        //{
+        //    var controller = (DualShock4GamepadHID)Gamepad.current;
+        //    if (glitch.GetFloat("_Intensity") > 0f)
+        //    {
+        //        controller.SetLightBarColor(color);
+        //    }
 
-            else
-            {
-                if (HPLeft > HP * 0.66)
-                    controller.SetLightBarColor(Color.green);
-                else if (HPLeft > HP * 0.33)
-                    controller.SetLightBarColor(Color.yellow);
-                else
-                    controller.SetLightBarColor(Color.red);
-            }
-        }
+        //    else
+        //    {
+        //        if (HPLeft > HP * 0.66)
+        //            controller.SetLightBarColor(Color.green);
+        //        else if (HPLeft > HP * 0.33)
+        //            controller.SetLightBarColor(Color.yellow);
+        //        else
+        //            controller.SetLightBarColor(Color.red);
+        //    }
+        //}
         if (healing)
         {
             HPLeft += Mathf.CeilToInt(Time.deltaTime);
@@ -409,12 +439,15 @@ public class PlayerMovement : MonoBehaviour
 
     public void Damage(int dam)
     {
-        animator.SetTrigger("Hit");
-        HPLeft -= dam;
-        if (HPLeft <= 0 && isDead == false)
+        if (!isDead)
         {
-            StartCoroutine(Death());
+            animator.SetTrigger("Hit");
+            HPLeft -= dam;
+        }
+        if (HPLeft <= 0 && !isDead)
+        {
             isDead = true;
+            StartCoroutine(Death());
         }
     }
 

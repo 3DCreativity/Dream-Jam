@@ -12,6 +12,7 @@ using System.Linq;
 public class SettingsManager : MonoBehaviour
 {
     Dictionary<Guid, string> overrides;
+    //Menus
     [SerializeField]
     GameObject Gameplay;
     [SerializeField]
@@ -24,10 +25,13 @@ public class SettingsManager : MonoBehaviour
     GameObject PS4;
     [SerializeField]
     GameObject XBOX;
+    //Keyboard Configuration menu
     [SerializeField]
     GameObject Key;
+    //Controller listening menu
     [SerializeField]
     GameObject Listener;
+
     [SerializeField]
     GameObject languages;
 
