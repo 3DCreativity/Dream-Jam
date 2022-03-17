@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &49569790 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8638940428123579226, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
-  m_PrefabInstance: {fileID: 131372862}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6da52f0af6701f1449f545a659aeca48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &56068601 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1561070081111496095, guid: e373edf4c8c9daa43865b0a973d2db10, type: 3}
@@ -398,11 +387,19 @@ PrefabInstance:
     - target: {fileID: 6389955636797733128, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: Bulgarian
       value: 
-      objectReference: {fileID: 49569790}
+      objectReference: {fileID: 0}
     - target: {fileID: 6389955636797733128, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: Character
       value: 
       objectReference: {fileID: 744444702}
+    - target: {fileID: 6389955636797733128, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: File.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389955636797733128, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6389955636797733129, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -456,6 +453,54 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].photo
+      value: Developer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].sentences.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].sentences.Array.data[0]
+      value: Oh, the Jam started!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].sentences.Array.data[1]
+      value: And the theme is... "Secrets of the Mystic"?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].sentences.Array.data[2]
+      value: Honestly I can't think much of it right now.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].sentences.Array.data[3]
+      value: I'll think more about it in the morning but for now...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].sentences.Array.data[4]
+      value: '*yawn*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].sentences.Array.data[5]
+      value: ...I'm off to bed.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].onEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 465462251}
@@ -475,6 +520,22 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 465462251}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1841637229}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 465462251}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: TriggerDialogue
@@ -496,6 +557,14 @@ PrefabInstance:
       value: EndDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoingToBed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EndDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[0].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: DialogueManagment, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -514,6 +583,22 @@ PrefabInstance:
     - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: dialogue.Array.data[2].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: DialogueManagment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GoToBed, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DialogueManagment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935416422787537641, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
+      propertyPath: dialogue.Array.data[3].onEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8638940428123579226, guid: 8c26e9a9b69b02b479aef3aa8828cffa, type: 3}
       propertyPath: m_Enabled
@@ -1682,7 +1767,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b37cc849fe9d5499319232189ed74f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LanguagePack: []
+  Log: []
+  criticalErrors: 0
 --- !u!114 &1667251660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1696,6 +1782,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   languages: []
+--- !u!114 &1667251663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667251658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc97ddaccf73c14182152f4c27a8a4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  languages: []
+  currentLanguage: English
+  dir: 
+  UIElements: []
+  Dialogue: []
+  Errors: []
 --- !u!1 &1728292516
 GameObject:
   m_ObjectHideFlags: 0

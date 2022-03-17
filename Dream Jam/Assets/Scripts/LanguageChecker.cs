@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,10 +17,10 @@ public class LanguageChecker : MonoBehaviour
         string languageBackupDir = "C:/Users/User/Desktop/Backup/LanguagePacks/";
         backupOnline = CheckBackup(languageDir, languageBackupDir);
         Check_RepairFiles(languageDir, languageBackupDir);
-        if (criticalErrors == 0) 
-        {
-            Check_RepairContent(languageDir, languageBackupDir);
-        }
+        //if (criticalErrors == 0) 
+        //{
+        //    Check_RepairContent(languageDir, languageBackupDir);
+        //}
         //Register any logs and errors from the check
         foreach (string log in logs)
         {
@@ -35,9 +36,12 @@ public class LanguageChecker : MonoBehaviour
         //Create one if not and return
         if (!Directory.Exists(languageBackupDir))
         {
-            logs.Add("Warning: Lnaguage Pack: No Backup Directory Found\n");
+            logs.Add("Warning: Lnaguage Pack: No Backup Directory Found");
             Directory.CreateDirectory(languageBackupDir);
-            logs.Add("Log: Language Pack: Empty Backup Path Created. Content Check Underway...");
+            if (Directory.Exists(languageBackupDir))
+                logs.Add("Log: Language Pack: Empty Backup Path Created. Content Check Underway...");
+            else
+                logs.Add("Error: Language Pack: Backup creation unsuccessful");
             return false;
         }
         //Check if all files are intact
@@ -91,7 +95,7 @@ public class LanguageChecker : MonoBehaviour
             }
             else
             {
-                logs.Add("Warning: Language Pack: No pack file found. Creating from template...\n");
+                logs.Add("Warning: Language Pack: No pack file found. Creating from template...");
                 File.WriteAllText(languageDir + "languages.pack", "English\nБългарски");
                 if (File.Exists(languageDir + "languages.pack"))
                 {
@@ -154,27 +158,30 @@ public class LanguageChecker : MonoBehaviour
             }
         }
     }
-    void Check_RepairContent(string languageDir,string languageBackupDir)
-    {
-        //See if there is backup and compare from there
-        //If there is not it must be freshly installed. Should be fine.(I could add an easter egg or a puzzle for this case)
-        if (!backupOnline)
-        {
-            return;
-        }
-        string[] langFiles = Directory.GetFiles(languageDir);
-        foreach (string file in langFiles)
-        {
-            //Check the contents
-        }
-    }
-    public void GenerateLanguagePackBackup(string languageDir, string languageBackupDir)
-    {
-        //Scan all files in the Language Pack Directory and copy them into the Backup Directory
-        string[] files = Directory.GetFiles(languageDir);
-        foreach (string file in files)
-        {
-            File.Copy(file, file.Replace(languageDir,languageBackupDir), true);
-        }
-    }
+    //void Check_RepairContent(string languageDir,string languageBackupDir)
+    //{
+    //    //See if there is backup and compare from there
+    //    //If there is not it must be freshly installed. Should be fine.(I could add an easter egg or a puzzle for this case)
+    //    if (!backupOnline)
+    //    {
+    //        return;
+    //    }
+    //    //string[] langFiles = Directory.GetFiles(languageDir);
+    //    FindObjectOfType<LanguageChanger>().GetLanguages();
+    //    FindObjectOfType<LanguageChanger>().ChangeLanguagePrefab();
+    //    //foreach (string file in langFiles)
+    //    //{
+    //    //    //Check the contents
+
+    //    //}
+    //}
+    //private void GenerateLanguagePackBackup(string languageDir, string languageBackupDir)
+    //{
+    //    //Scan all files in the Language Pack Directory and copy them into the Backup Directory
+    //    string[] files = Directory.GetFiles(languageDir);
+    //    foreach (string file in files)
+    //    {
+    //        File.Copy(file, file.Replace(languageDir,languageBackupDir), true);
+    //    }
+    //}
 }

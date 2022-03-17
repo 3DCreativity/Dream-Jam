@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManagment : MonoBehaviour
 {
@@ -17,39 +19,28 @@ public class DialogueManagment : MonoBehaviour
     string Developer;
     bool startedDialogue = false;
     [SerializeField]
-    string Language;
+    private List<string> File;
     [SerializeField]
-    DialogueTrigger English;
+    private List<Dialogue> dialogue;
     [SerializeField]
-    DialogueTrigger Bulgarian;
+    DialogueTrigger MainDialogue;
+    [SerializeField]
+    bool readFromFile = true;
 
     private void Awake()
     {
-        Language = GameObject.FindObjectOfType<GameManager>().Language;
         if (onEnd == null)
         {
             onEnd = new UnityEvent();
         }
         Developer = GameObject.FindObjectOfType<GameManager>().developerName;
+        if (readFromFile)
+            GetDialogue();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-    private void Update()
-    {
-        Language = GameObject.FindObjectOfType<GameManager>().Language;
-        if (Language == "English" && startedDialogue == false && English.enabled == false) {
-            Bulgarian.enabled = false;
-            English.enabled = true;
-        } 
-        else if (Language == "Български" && startedDialogue == false && Bulgarian.enabled == false)
-        {
-            English.enabled = false;
-            Bulgarian.enabled = true;
-        }
-    }
+    //private void Update()
+    //{
+        
+    //}
     public void StartDialogue(Dialogue dialogue, UnityEvent onEnding)
     {
         startedDialogue = true;
@@ -119,13 +110,42 @@ public class DialogueManagment : MonoBehaviour
     }
     public void TriggerDialogue()
     {
-        if (Language == "Български")
+        MainDialogue.TriggerDialogue();
+    }
+
+    public void GetDialogue()
+    {
+        dialogue.Clear();
+        string currentLanguage = FindObjectOfType<LanguageChanger>().currentLanguage;
+        int fileIndex = SceneManager.GetActiveScene().buildIndex;
+        Debug.LogWarning(fileIndex);
+        Dialogue temp = new Dialogue();
+        List<string> sentences = new List<string>();
+        File = FindObjectOfType<LanguageChanger>().Dialogue[fileIndex].levelDialogue;
+        foreach (string row in File)
         {
-            Bulgarian.TriggerDialogue();
+            if (row[0] == '~')
+            {
+                temp.sentences = sentences.ToArray();
+                sentences.Clear();
+                dialogue.Add(temp);
+                temp.name = row.Substring(1);
+                continue;
+            }
+            if (row.Substring(0,2) == "/~")
+            {
+                temp.photo = row.Substring(2);
+                continue;
+            }
+            if (row[0] == '&')
+            {
+                temp.EventHint = row.Substring(1);
+                continue;
+            }
+            sentences.Add(row);
         }
-        if (Language == "English")
-        {
-            English.TriggerDialogue();
-        }
+        MainDialogue.dialogue = dialogue.ToArray();
+        dialogue.Clear();
+
     }
 }

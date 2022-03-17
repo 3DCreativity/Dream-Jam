@@ -1,0 +1,221 @@
+#The symbol # will be used as a comment for the row
+#The symbol ^ Will be used to mark the level for which the following dialogue coresponds and /^ will mark to where the dialogue will corespond
+#The symbol ~ will mark the name of the Character in a dialogue and a submenu in the UI
+#The symbol /~ will mark the picture name in dialogue and the end in the UI elements
+#The symbol & will mark where is a trigger after some dialogue and the text afterwards will be used in the Editor as a hint on what it is supposed to do
+#If in a dialogue there isn't a trigger, it will pass on the next part as a continuation of the dialogue automatically
+
+^UI
+
+~Controls
+
+Movement = Movement
+Interact = Interact
+EnablAttack1 = Enable Attack 1
+EnablAttack2 = Enable Attack 2
+Attack1 = Attack 1
+Attack2 = Attack 2
+Heal = Heal
+Shield = Shield
+Focus = Focus
+
+/~
+
+~PS4
+
+DualShock = DualShock
+
+/~
+
+~XBOX
+
+XBOX = XBOX
+
+/~
+
+~Keyboard/Mouse
+
+Keyboard/Mouse = Keyboard/Mouse
+
+/~
+
+~Names
+
+#Character names
+
+Michael = Michael Adler
+Cat = Oliver
+Glitch = R̶͙̠̈́̂2̵̮̻͗x̸͎͑͠p̴̜̪̐̀d̴̻͒G̷̜̔Ṋ̶͗̀ȯ̶̰͋
+Executor = 
+Goblin = Bengo
+Witch = Kritina
+Evil Wizard = 
+Dark Lord = 
+Guardian = Anselm
+
+
+#Button names
+#General
+Start = Start
+Settings = Settigs
+Credits = Credits
+Quit = Quit
+Back = Back
+#Settings
+#Main
+GameplayBtn = Gameplay
+GraphicsBtn = Graphics
+MusicBtn = Music
+#Gameplay
+KeyboardConfig = Config
+ControllerConfig = Config
+Keyboard = Keyboard
+Controller = Controller
+Language = Language
+#Controller Listening Warning
+Controller_Warning = No Controller Detected!\nPress X/A on your controller to refresh.
+#Music
+Music_Volume = Music Volume
+SFX_Volume = SFX Volume
+Master_Volume = Master Volume
+#Graphics
+Fullscreen = Fullscreen
+Resolution = Resolution
+Bloom = Bloom
+Brightness = Brightness
+
+/~
+~Titles
+
+#Level titles
+
+Level 1 = Weird Dream
+Level 2 = Level 2
+Level 3 = Level 3
+Level 4 = Level 4
+Level 5 = Level 5
+MainMenu = Main Menu
+Tutorial = Tutorial
+TestLevel = Test Level
+SecretLevel = Secret Level
+
+#Menu titles
+
+Main_Title = Dream Jam
+Settings_Title = Settings
+Gameplay_Title = Gameplay
+Music_Title = Music
+Graphics_Title = Graphics
+Credits_Title = Credits
+Version = 0 Alpha
+
+/~
+
+~Credits
+Dream Jam
+Graphics:
+asnimuz - Country Side Platformer Asset
+Creative Kind - Obelisk Asset
+Maaot - Mossy Cavern Asset
+LuizMelo - Fantasy Warrior and Wizard asset pack
+Kronovi- - Undead Executioner asset pack
+VampireGirl - Hearts and health bar asset pack
+Pipoya - VFX Warp Portal asset pack
+Szadi art. - RPG Main Character asset pack (Developer)
+Jan Schneider - Mansion Interior asset pack
+Pop Shop Packs - Cats asset pack
+Hristo Uzunov - Dialogue Box
+Pixabay
+
+SFX:
+Sound Effects provided by Zapsplat
+
+Coding Environment:
+Visual Studio 2019
+
+Graphic tools:
+Paint.net
+Photopea
+/~
+
+/^
+
+^Warnings/Errors
+
+#Startup
+
+Startup_Warning_1 = This game features Auto-Save
+Startup_Warning_2 = Don't turn off your machine while this simbol is displayed
+
+#Language Pack
+
+Language_Warning_BDir_NF = Warning: Lnaguage Pack: No Backup directory found
+Language_Warning_Pack = Warning: Language Pack: No pack file found. Creating from template...
+Language_Warning_C
+Language_Error_Pack = Error: Language Pack: Creation unsuccessful. Reinstallation may be required.
+Language_Error_BDir = Error: Language Pack: Backup creation unsuccessful
+Language_Error_File = Error: Language Packs: {language}.language is missing! Reinstallation may be required.
+Language_Log_Pack = Log: Language Pack: Creation successful
+Language_Log_BDir = Log: Language Pack: Empty Backup path created successfully. Content check underway...
+
+/^
+
+#StartDialogue
+
+^MainMenu
+
+#New game
+
+~Michael
+/~Developer
+
+#The result will be displayes in pieces, seperated by user input
+	
+Oh man... I am tired.
+But I want to see the theme for the Game Jam before I go to sleep.
+Who knows...
+...maybe my idea for my game can come from my dream.
+Am I right Oscar?
+
+~Cat
+/~Cat
+
+meow
+
+&Revealing of the theme
+
+~Michael
+/~Developer
+
+Yes! The Jam started!
+And the theme is...
+"Secrets of the mystic"?
+yawn
+Too tired to think about it - better go to sleep.
+It's going to be a tough week.
+
+&Put Michael to sleep
+
+/^
+
+^Weird Dream
+
+
+~Michael
+/~Magician
+
+Wha........?
+Wait, what!?!
+Where am I?
+What is this place?
+
+~Cat
+/~Cat
+
+Our Lord, please save us!
+After you were banished, the whole kingdom is terrified of the new Dark Lord!
+He rules with power unlike anyone has ever seen!
+Most of the people are dead from him or hunger!
+You need to <>
+
+/^

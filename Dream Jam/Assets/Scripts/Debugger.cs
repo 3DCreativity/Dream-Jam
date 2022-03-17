@@ -13,10 +13,12 @@ public class Debugger : MonoBehaviour
     public int criticalErrors = 0;
 
     //Startup Check
-    private void Start()
+    private void Awake()
     {
         Application.logMessageReceived += UnityLog;
         CheckAllSystems();
+        FindObjectOfType<LanguageChanger>().GetLanguages();
+        FindObjectOfType<LanguageChanger>().ChangeLanguagePrefab();
     }
     
     void UnityLog(string logString, string stackTrace, LogType type)
