@@ -18,16 +18,17 @@ public class DialogueManagment : MonoBehaviour
     UnityEvent onEnd;
     string Developer;
     bool startedDialogue = false;
-    [SerializeField]
-    private List<string> File;
+    //[SerializeField]
+    //private List<string> File;
     [SerializeField]
     private List<Dialogue> dialogue;
     [SerializeField]
     DialogueTrigger MainDialogue;
     [SerializeField]
     bool readFromFile = true;
+    public Triggers[] triggers;
 
-    private void Awake()
+    private void Start()
     {
         if (onEnd == null)
         {
@@ -119,33 +120,53 @@ public class DialogueManagment : MonoBehaviour
         string currentLanguage = FindObjectOfType<LanguageChanger>().currentLanguage;
         int fileIndex = SceneManager.GetActiveScene().buildIndex;
         Debug.LogWarning(fileIndex);
-        Dialogue temp = new Dialogue();
+        int dialogueIndex = 0;
         List<string> sentences = new List<string>();
-        File = FindObjectOfType<LanguageChanger>().Dialogue[fileIndex].levelDialogue;
-        foreach (string row in File)
+        //File = FindObjectOfType<LanguageChanger>().Dialogue[fileIndex].levelDialogue;
+        foreach (string row in FindObjectOfType<LanguageChanger>().Dialogue[fileIndex].levelDialogue)
         {
             if (row[0] == '~')
             {
-                temp.sentences = sentences.ToArray();
-                sentences.Clear();
-                dialogue.Add(temp);
-                temp.name = row.Substring(1);
+                if (dialogue.Count != 0)
+                {
+                    dialogue[dialogueIndex-1].sentences = sentences.ToArray();
+                    sentences.Clear();
+                    Debug.LogError(sentences);
+                    if (dialogue[dialogueIndex - 1].EventHint == null)
+                    {
+                        dialogue[dialogueIndex - 1].onEnd = triggers[0].trigger;
+                    }
+                }
+                dialogue.Add(new Dialogue());
+                dialogueIndex++;
+                dialogue[dialogueIndex - 1].name = row.Substring(1);
                 continue;
             }
             if (row.Substring(0,2) == "/~")
             {
-                temp.photo = row.Substring(2);
+                dialogue[dialogueIndex - 1].photo = row.Substring(2);
                 continue;
             }
             if (row[0] == '&')
             {
-                temp.EventHint = row.Substring(1);
+                dialogue[dialogueIndex - 1].EventHint = row.Substring(1);
+                foreach (Triggers trigger in triggers)
+                {
+                    if (dialogue[dialogueIndex - 1].EventHint == null)
+                    {
+                        dialogue[dialogueIndex - 1].onEnd = triggers[0].trigger;
+                        break;
+                    }
+                    if (dialogue[dialogueIndex - 1].EventHint == trigger.triggerHint)
+                    {
+                        dialogue[dialogueIndex - 1].onEnd = trigger.trigger;
+                        break;
+                    }
+                }
                 continue;
             }
             sentences.Add(row);
         }
         MainDialogue.dialogue = dialogue.ToArray();
-        dialogue.Clear();
-
     }
 }

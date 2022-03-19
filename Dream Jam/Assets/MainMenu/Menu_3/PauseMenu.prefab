@@ -238,8 +238,8 @@ GameObject:
   - component: {fileID: 579916604257714432}
   - component: {fileID: 664243502626550940}
   m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
+  m_Name: Fullscreen
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 3445943398727361855}
   m_Layer: 5
   m_Name: Heal
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -641,7 +641,7 @@ GameObject:
   - component: {fileID: 5497820872201925727}
   m_Layer: 5
   m_Name: Attack2
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -975,8 +975,8 @@ GameObject:
   - component: {fileID: 4089983910987140262}
   - component: {fileID: 664243502587898332}
   m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
+  m_Name: Title
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1174,8 +1174,8 @@ GameObject:
   - component: {fileID: 6770604433950685551}
   - component: {fileID: 664243503599050791}
   m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
+  m_Name: Title
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1321,7 +1321,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0415"
+  m_Text: E
 --- !u!1 &668680220989080486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,7 +1528,7 @@ GameObject:
   - component: {fileID: 8513681467376681727}
   m_Layer: 5
   m_Name: Shield
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1721,7 +1721,7 @@ GameObject:
   - component: {fileID: 5471483721479298142}
   m_Layer: 5
   m_Name: EnablAttack2
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2750,7 +2750,7 @@ GameObject:
   - component: {fileID: 4654403421183549846}
   m_Layer: 5
   m_Name: Restart
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2770,7 +2770,7 @@ RectTransform:
   - {fileID: 3760724756954762940}
   - {fileID: 4829826659003735060}
   m_Father: {fileID: 6504592402390887181}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3155,7 +3155,7 @@ GameObject:
   - component: {fileID: 3666612365818437790}
   m_Layer: 5
   m_Name: Focus
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3370,7 +3370,7 @@ GameObject:
   - component: {fileID: 2479985662498773285}
   m_Layer: 5
   m_Name: Movement
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3449,8 +3449,8 @@ GameObject:
   - component: {fileID: 4479059896416246218}
   - component: {fileID: 2444862573451865110}
   m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
+  m_Name: Music_Volume
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3586,7 +3586,7 @@ GameObject:
   - component: {fileID: 7137085175779746690}
   m_Layer: 5
   m_Name: Back
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3967,8 +3967,8 @@ GameObject:
   - component: {fileID: 3097965364917736096}
   - component: {fileID: 2870194688412002233}
   m_Layer: 5
-  m_Name: DualShock4
-  m_TagString: Untagged
+  m_Name: DualShock
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4460,8 +4460,8 @@ GameObject:
   - component: {fileID: 66683625296072560}
   - component: {fileID: 1283893087433040559}
   m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
+  m_Name: Keyboard
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5535,7 +5535,7 @@ GameObject:
   - component: {fileID: 7266733627721176281}
   m_Layer: 5
   m_Name: MusicBtn
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5942,7 +5942,7 @@ GameObject:
   - component: {fileID: 7842408806934809213}
   m_Layer: 5
   m_Name: EnablAttack1
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6062,7 +6062,7 @@ GameObject:
   - component: {fileID: 4217022866173634325}
   m_Layer: 5
   m_Name: Heal
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6141,8 +6141,8 @@ GameObject:
   - component: {fileID: 8032900068789311328}
   - component: {fileID: 8378794415511805634}
   m_Layer: 5
-  m_Name: Text (1)
-  m_TagString: Untagged
+  m_Name: Controller
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6772,8 +6772,8 @@ GameObject:
   - component: {fileID: 4956554260614683259}
   - component: {fileID: 536146785327923776}
   m_Layer: 5
-  m_Name: ChangeConfigKey
-  m_TagString: Untagged
+  m_Name: KeyboardConfig
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7915,7 +7915,7 @@ GameObject:
   - component: {fileID: 6372522837678412620}
   m_Layer: 5
   m_Name: Focus
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8183,8 +8183,8 @@ GameObject:
   - component: {fileID: 5078161479842996550}
   - component: {fileID: 6311949346780554805}
   m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
+  m_Name: Controller_Warning
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9501,7 +9501,7 @@ GameObject:
   - component: {fileID: 8750446714052763461}
   m_Layer: 5
   m_Name: Focus
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10275,7 +10275,7 @@ GameObject:
   - component: {fileID: 44235170001350873}
   m_Layer: 5
   m_Name: Interact
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10355,7 +10355,7 @@ GameObject:
   - component: {fileID: 7855372504895703372}
   m_Layer: 5
   m_Name: Attack2
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11301,8 +11301,8 @@ GameObject:
   - component: {fileID: 722853644163979299}
   - component: {fileID: 664243503241109013}
   m_Layer: 5
-  m_Name: Text (3)
-  m_TagString: Untagged
+  m_Name: Brightness
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11516,8 +11516,8 @@ GameObject:
   - component: {fileID: 1130017493763199859}
   - component: {fileID: 9190420881355576063}
   m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
+  m_Name: Master_Volume
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12020,7 +12020,7 @@ GameObject:
   - component: {fileID: 2331282323460832748}
   m_Layer: 5
   m_Name: Interact
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12176,7 +12176,7 @@ GameObject:
   - component: {fileID: 6269556660639609800}
   m_Layer: 5
   m_Name: Shield
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12402,7 +12402,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0417"
+  m_Text: Z
 --- !u!1 &4692077090622230670
 GameObject:
   m_ObjectHideFlags: 0
@@ -12415,8 +12415,8 @@ GameObject:
   - component: {fileID: 9136771265366399279}
   - component: {fileID: 4358778362351370354}
   m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
+  m_Name: Title
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12628,7 +12628,7 @@ GameObject:
   - component: {fileID: 299231023819466844}
   m_Layer: 5
   m_Name: GameplayBtn
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12774,7 +12774,7 @@ GameObject:
   - component: {fileID: 1249851805519422052}
   m_Layer: 5
   m_Name: EnablAttack2
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13181,7 +13181,7 @@ GameObject:
   - component: {fileID: 1191694778772327079}
   m_Layer: 5
   m_Name: GraphicsBtn
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13833,8 +13833,8 @@ GameObject:
   - component: {fileID: 2611060001244407293}
   - component: {fileID: 4848508760553002021}
   m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
+  m_Name: Language
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13951,7 +13951,7 @@ GameObject:
   - component: {fileID: 1770605223388731572}
   m_Layer: 5
   m_Name: Attack2
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14567,7 +14567,7 @@ GameObject:
   - component: {fileID: 5700042409238604372}
   m_Layer: 5
   m_Name: Heal
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14684,7 +14684,7 @@ GameObject:
   - component: {fileID: 4905674010000610161}
   m_Layer: 5
   m_Name: Movement
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14764,7 +14764,7 @@ GameObject:
   - component: {fileID: 1853559736739255416}
   m_Layer: 5
   m_Name: Attack1
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14919,8 +14919,8 @@ GameObject:
   - component: {fileID: 4419244533498724257}
   - component: {fileID: 664243502298247549}
   m_Layer: 5
-  m_Name: Text (2)
-  m_TagString: Untagged
+  m_Name: Bloom
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16323,8 +16323,8 @@ GameObject:
   - component: {fileID: 6504592401444779028}
   - component: {fileID: 6504592401444779027}
   m_Layer: 5
-  m_Name: Title
-  m_TagString: Untagged
+  m_Name: Pause
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16377,7 +16377,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Game \u0420aused"
+  m_text: "\u0420aused"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6129ddfe97815647be27fa827578230, type: 2}
   m_sharedMaterial: {fileID: -3589045529673363329, guid: e6129ddfe97815647be27fa827578230, type: 2}
@@ -16506,7 +16506,7 @@ GameObject:
   - component: {fileID: 6504592402103971331}
   m_Layer: 5
   m_Name: Exit
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16526,7 +16526,7 @@ RectTransform:
   - {fileID: 5153463147934835566}
   - {fileID: 6504592402896190974}
   m_Father: {fileID: 6504592402390887181}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16788,7 +16788,7 @@ GameObject:
   - component: {fileID: 6504592402178960366}
   m_Layer: 5
   m_Name: Settings
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16808,7 +16808,7 @@ RectTransform:
   - {fileID: 986838129887414063}
   - {fileID: 6504592402381407584}
   m_Father: {fileID: 6504592402390887181}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16935,7 +16935,7 @@ GameObject:
   - component: {fileID: 6504592402356520927}
   m_Layer: 5
   m_Name: ExitMenu
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16955,7 +16955,7 @@ RectTransform:
   - {fileID: 4136379573336786427}
   - {fileID: 6504592402106520511}
   m_Father: {fileID: 6504592402390887181}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17232,7 +17232,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6504592401444779026}
-  - {fileID: 6504592403157491872}
   - {fileID: 250393292204982018}
   - {fileID: 6504592402394522234}
   - {fileID: 6504592402178960365}
@@ -17260,7 +17259,7 @@ GameObject:
   - component: {fileID: 6504592402394522236}
   m_Layer: 5
   m_Name: Resume
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17280,7 +17279,7 @@ RectTransform:
   - {fileID: 263661155794368877}
   - {fileID: 6504592403212536298}
   m_Father: {fileID: 6504592402390887181}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17609,141 +17608,6 @@ MonoBehaviour:
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
   m_margin: {x: -26.51715, y: 7.4678097, z: -13.669968, w: 7.5944233}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &6504592403157491887
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6504592403157491872}
-  - component: {fileID: 6504592403157491874}
-  - component: {fileID: 6504592403157491873}
-  m_Layer: 5
-  m_Name: Brackeys
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &6504592403157491872
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6504592403157491887}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6504592402390887181}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 245}
-  m_SizeDelta: {x: 780.476, y: 58.2317}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &6504592403157491874
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6504592403157491887}
-  m_CullTransparentMesh: 1
---- !u!114 &6504592403157491873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6504592403157491887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Brackeys Game Jam 2021.2
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e6129ddfe97815647be27fa827578230, type: 2}
-  m_sharedMaterial: {fileID: -3589045529673363329, guid: e6129ddfe97815647be27fa827578230, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278574540
-  m_fontColor: {r: 0.8000001, g: 0.86666673, b: 0.019607844, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 0.43137258, g: 0.28627452, b: 0.8078432, a: 1}
-    topRight: {r: 0.9058824, g: 0.7137255, b: 0.3529412, a: 1}
-    bottomLeft: {r: 0.27058825, g: 0.14509805, b: 0.5921569, a: 1}
-    bottomRight: {r: 0.62352943, g: 0.24705884, b: 0.6117647, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 72
-  m_fontSizeMax: 288
-  m_fontStyle: 1
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 4096
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -180.5445, y: 0, z: -180.60376, w: -62.75943}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -18287,7 +18151,7 @@ GameObject:
   - component: {fileID: 1411143887344747794}
   m_Layer: 5
   m_Name: EnablAttack1
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18979,7 +18843,7 @@ GameObject:
   - component: {fileID: 8102955309687893439}
   m_Layer: 5
   m_Name: Attack1
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19776,7 +19640,7 @@ GameObject:
   - component: {fileID: 760797197280859528}
   m_Layer: 5
   m_Name: EnablAttack2
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20382,7 +20246,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u042C"
+  m_Text: X
 --- !u!1 &7565564928633919901
 GameObject:
   m_ObjectHideFlags: 0
@@ -20760,8 +20624,8 @@ GameObject:
   - component: {fileID: 9155120321345691207}
   - component: {fileID: 5267948499315684497}
   m_Layer: 5
-  m_Name: ChangeConfigControl
-  m_TagString: Untagged
+  m_Name: ControllerConfig
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21071,7 +20935,7 @@ GameObject:
   - component: {fileID: 2632527130999430114}
   m_Layer: 5
   m_Name: XBOX
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21286,7 +21150,7 @@ GameObject:
   - component: {fileID: 6079032898145831706}
   m_Layer: 5
   m_Name: Interact
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21647,8 +21511,8 @@ GameObject:
   - component: {fileID: 4686389211570667760}
   - component: {fileID: 1625369416215972674}
   m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
+  m_Name: SFX_Volume
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22007,7 +21871,7 @@ GameObject:
   - component: {fileID: 1019331849689317721}
   m_Layer: 5
   m_Name: EnablAttack1
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22364,7 +22228,7 @@ GameObject:
   - component: {fileID: 8081577329710030750}
   m_Layer: 5
   m_Name: Attack1
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22444,7 +22308,7 @@ GameObject:
   - component: {fileID: 6501801519504846424}
   m_Layer: 5
   m_Name: Title
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22579,7 +22443,7 @@ GameObject:
   - component: {fileID: 4594545822452925394}
   m_Layer: 5
   m_Name: Shield
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23638,7 +23502,7 @@ GameObject:
   - component: {fileID: 309382411986487936}
   m_Layer: 5
   m_Name: Movement
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24125,7 +23989,7 @@ GameObject:
   - component: {fileID: 7747557293446076589}
   m_Layer: 5
   m_Name: Keyboard/Mouse
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24383,8 +24247,8 @@ GameObject:
   - component: {fileID: 926686921293751355}
   - component: {fileID: 664243501715137587}
   m_Layer: 5
-  m_Name: Text (1)
-  m_TagString: Untagged
+  m_Name: Resolution
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

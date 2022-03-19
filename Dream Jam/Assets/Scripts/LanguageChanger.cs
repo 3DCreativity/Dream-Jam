@@ -53,30 +53,30 @@ public class LanguageChanger : MonoBehaviour
                 inErrors = false;
                 continue;
             }
-            Debug.Log(line);
+            //Debug.Log(line);
             if (line == "")
             {
-                Debug.Log("continue");
+                //Debug.Log("continue");
                 continue;
             }
             if (line == "#Start Dialogue")
             {
-                Debug.Log("The dialogue part started");
+                //Debug.Log("The dialogue part started");
                 inDialogue = true;
                 continue;
             }
             if (line[0] == '#')
             {
-                Debug.Log("comment");
+                //Debug.Log("comment");
                 continue;
             }
             if (line[0] == '^')
             {
-                Debug.Log("I wrote this down");
+                //Debug.Log("I wrote this down");
                 string usage = line.Substring(1);
                 if (inDialogue)
                 {
-                    Debug.Log("It's a level");
+                    //Debug.Log("It's a level");
                     inLevel = true;
                     Dialogue.Add(new LevelDialogue());
                     levelCount++;
@@ -84,13 +84,13 @@ public class LanguageChanger : MonoBehaviour
                 }
                 if (usage == "Warnings/Errors")
                 {
-                    Debug.Log("It's the Errors");
+                    //Debug.Log("It's the Errors");
                     inErrors = true;
                     continue;
                 }
                 if (usage == "UI")
                 {
-                    Debug.Log("It's the UI");
+                    //Debug.Log("It's the UI");
                     inUI = true;
                     continue;
                 }
@@ -107,11 +107,11 @@ public class LanguageChanger : MonoBehaviour
             }
             if (inLevel)
             {
-                Debug.LogWarning("Added line to Level");
+                //Debug.LogWarning("Added line to Level");
                 Dialogue[levelCount-1].levelDialogue.Add(line);
                 continue;
             }
-            Debug.Log("Way out of line");
+            //Debug.Log("Way out of line");
         }
     }
 }

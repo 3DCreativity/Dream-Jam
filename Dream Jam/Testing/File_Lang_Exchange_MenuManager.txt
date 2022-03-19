@@ -1,0 +1,105 @@
+private void Awake()
+    {
+        ChangeLanguage(FindObjectOfType<LanguageChanger>().languages.IndexOf(FindObjectOfType<LanguageChanger>().currentLanguage));
+    }
+    public void ChangeLanguage(int languageIndex)
+    {
+        FindObjectOfType<LanguageChanger>().currentLanguage = FindObjectOfType<LanguageChanger>().languages[languageIndex];
+        FindObjectOfType<LanguageChanger>().ChangeLanguagePrefab();
+       // file = FindObjectOfType<LanguageChanger>().UIElements;
+        List<string> names = new List<string>();
+        List<string> titles = new List<string>();
+        bool inNames = false;
+        bool inTitles = false;
+        bool inCredits = false;
+        Credits_Text = "";
+        foreach (string line in FindObjectOfType<LanguageChanger>().UIElements)
+        {
+            if (line.Substring(0, 2) == "/~")
+            {
+                inNames = false;
+                inTitles = false;
+                continue;
+            }
+            if (line[0] == '~')
+            {
+                string temp = line.Substring(1);
+                if (temp == "Titles")
+                {
+                    inTitles = true;
+                    continue;
+                }
+                if (temp == "Controls" || temp == "Names")
+                {
+                    inNames = true;
+                    continue;
+                }
+                if (temp == "Credits")
+                {
+                    inCredits = true;
+                    continue;
+                }
+            }
+            if (inNames)
+            {
+                names.Add(line);
+            }
+            if (inTitles)
+            {
+                titles.Add(line);
+            }
+            if (inCredits)
+            {
+                Credits_Text += line + "\n";
+            }
+        }
+        foreach (GameObject obj in GameObject.FindGameObjectsWithTag("LanguageDependent"))
+        {
+            if (obj.name == "Title")
+            {
+                foreach (string title in titles)
+                {
+                    Debug.LogError(title);
+                    int length = title.IndexOf("=") - 1;
+                    if (obj.transform.parent.gameObject.name == title.Substring(0, length))
+                    {
+                        Debug.Log(obj.transform.parent.gameObject.name);
+                        if (obj.GetComponent<TMP_Text>() != null)
+                        {
+                            Debug.LogWarning(obj.transform.parent.gameObject.name + " TMP");
+                            obj.GetComponent<TMP_Text>().text = title.Substring(length + 2);
+                            break;
+                        }
+                        else
+                        {
+                            Debug.LogWarning(obj.transform.parent.gameObject.name + " Text");
+                            obj.transform.GetComponent<Text>().text = title.Substring(length + 2);
+                            break;
+                        }
+                    }
+                }
+                continue;
+                
+            }
+            foreach(string name in names)
+            {
+                Debug.LogError(name);
+                int length = name.IndexOf("=") - 1;
+                if (obj.name == name.Substring(0, length))
+                {
+                    if (obj.transform.GetComponentInChildren<TMP_Text>() != null)
+                    {
+                        Debug.LogWarning(obj.name + " TMP");
+                        obj.transform.GetComponentInChildren<TMP_Text>().text = name.Substring(length + 2);
+                        //break;
+                    }
+                    else
+                    {
+                        Debug.LogWarning(obj.name + " Text");
+                        obj.transform.GetComponentInChildren<Text>().text = name.Substring(length + 2);
+                        //break;
+                    }
+                }
+            }
+        }
+    }

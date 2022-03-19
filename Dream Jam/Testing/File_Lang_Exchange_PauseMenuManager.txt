@@ -1,0 +1,86 @@
+private void Awake()
+    {
+        ChangeLanguage(FindObjectOfType<LanguageChanger>().languages.IndexOf(FindObjectOfType<LanguageChanger>().currentLanguage));
+    }
+    public void ChangeLanguage(int languageIndex)
+    {
+        FindObjectOfType<LanguageChanger>().currentLanguage = FindObjectOfType<LanguageChanger>().languages[1];
+        FindObjectOfType<LanguageChanger>().ChangeLanguagePrefab();
+        //file = FindObjectOfType<LanguageChanger>().UIElements;
+        List<string> names = new List<string>();
+        List<string> titles = new List<string>();
+        bool inNames = false;
+        bool inTitles = false;
+        foreach (string line in FindObjectOfType<LanguageChanger>().UIElements)
+        {
+            if (line[0] == '~')
+            {
+                string temp = line.Substring(1);
+                if (temp == "Titles")
+                {
+                    inTitles = true;
+                    continue;
+                }
+                if (temp == "Controls" || temp == "Names")
+                {
+                    inNames = true;
+                    continue;
+                }
+            }
+            if (inNames)
+            {
+                names.Add(line);
+            }
+            if (inTitles)
+            {
+                titles.Add(line);
+            }
+            if (line.Substring(0, 2) == "/~")
+            {
+                inNames = false;
+                inTitles = false;
+            }
+        }
+        foreach (GameObject obj in GameObject.FindGameObjectsWithTag("LanguageDependent"))
+        {
+            if (obj.name == "Title")
+            {
+                foreach (string title in titles)
+                {
+                    int length = title.IndexOf("=") - 1;
+                    if (obj.transform.parent.gameObject.name + "_Title" == title.Substring(0, length))
+                    {
+                        if (obj.GetComponent<TMP_Text>() != null)
+                        {
+                            obj.GetComponent<TMP_Text>().text = name.Substring(length + 2);
+                            break;
+                        }
+                        else
+                        {
+                            obj.transform.GetComponent<Text>().text = name.Substring(length + 2);
+                            break;
+                        }
+                    }
+                }
+                continue;
+
+            }
+            foreach (string name in names)
+            {
+                int length = name.IndexOf("=") - 1;
+                if (obj.name == name.Substring(0, length))
+                {
+                    if (obj.transform.GetComponentInChildren<TMP_Text>() != null)
+                    {
+                        obj.transform.GetComponentInChildren<TMP_Text>().text = name.Substring(length + 2);
+                        break;
+                    }
+                    else
+                    {
+                        obj.transform.GetComponentInChildren<Text>().text = name.Substring(length + 2);
+                        break;
+                    }
+                }
+            }
+        }
+    }

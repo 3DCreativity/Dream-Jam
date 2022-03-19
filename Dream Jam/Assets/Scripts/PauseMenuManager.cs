@@ -15,7 +15,7 @@ public class PauseMenuManager : MonoBehaviour
     bool Bulgarian = false;
     [SerializeField]
     GameObject SettingsTitle;
-    
+    private List<string> file = new List<string>();
 
     private void Update()
     {
@@ -47,9 +47,9 @@ public class PauseMenuManager : MonoBehaviour
                     else if (text == "Settings")
                         text = "Настройки";
                     else if (text == "Exit")
-                        text = "изход";
+                        text = "Изход";
                     else if (text == "Exit Game")
-                        text = "изход игра";
+                        text = "Изход игра";
                     TMP.fontSize = 30;
                     TMP.text = text;
                 }
@@ -57,7 +57,7 @@ public class PauseMenuManager : MonoBehaviour
             if (SettingsMenu.activeInHierarchy)
             {
                 TMP = SettingsTitle.GetComponent<TextMeshProUGUI>();
-                TMP.text = "Настрoйки";
+                TMP.text = "Настройки";
                 var SettingsButtons = SettingsMenu.GetComponentsInChildren<Button>();
                 foreach (Button button in SettingsButtons)
                 {
@@ -73,7 +73,7 @@ public class PauseMenuManager : MonoBehaviour
                     else if (text == "Graphics")
                         text = "Графика";
                     else if (text == "Music")
-                        text = "Mузика";
+                        text = "Музика";
                     else if (text == "Config")
                         text = "Конфиг.";
                     else if (text == "Back")
@@ -82,7 +82,7 @@ public class PauseMenuManager : MonoBehaviour
                     TMP.text = text;
                 }
             }
-            
+
 
         }
         else
@@ -104,9 +104,9 @@ public class PauseMenuManager : MonoBehaviour
                         text = "Restart";
                     else if (text == "Настройки")
                         text = "Settings";
-                    else if (text == "изход")
+                    else if (text == "Изход")
                         text = "Exit";
-                    else if (text == "изход игра")
+                    else if (text == "Изход игра")
                         text = "Exit Game";
                     TMP.fontSize = 38;
                     TMP.text = text;
@@ -130,7 +130,7 @@ public class PauseMenuManager : MonoBehaviour
                     }
                     else if (text == "Графика")
                         text = "Graphics";
-                    else if (text == "Mузика")
+                    else if (text == "Музика")
                         text = "Music";
                     else if (text == "Конфиг.")
                         text = "Config";
@@ -140,7 +140,7 @@ public class PauseMenuManager : MonoBehaviour
                     TMP.text = text;
                 }
             }
-            
+
 
         }
     }
@@ -155,6 +155,7 @@ public class PauseMenuManager : MonoBehaviour
             Bulgarian = true;
         }
     }
+
     public void DisplayControllsMenu()
     {
         MainMenu.SetActive(false);

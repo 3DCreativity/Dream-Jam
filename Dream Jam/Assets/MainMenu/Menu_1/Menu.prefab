@@ -135,7 +135,71 @@ MonoBehaviour:
   CreditsMenu: {fileID: 4564869681006179803}
   animator: {fileID: 4564869681139233125}
   Language: 
-  Credits_Text: 
+  LanguageChanged: 0
+  EnglishCredits: 'Dream Jam
+
+    Graphics:
+
+    asnimuz - Country Side Platformer
+    Asset
+
+    Creative Kind - Obelisk Asset
+
+    Maaot - Mossy Cavern Asset
+
+    LuizMelo
+    - Fantasy Warrior and Wizard asset pack
+
+    Kronovi- - Undead Executioner asset
+    pack
+
+    VampireGirl - Hearts and health bar asset pack
+
+    Pipoya - VFX Warp
+    Portal asset pack
+
+    Szadi art. - RPG Main Character asset pack (Developer)
+
+    Jan
+    Schneider - Mansion Interior asset pack
+
+    Pop Shop Packs - Cats asset pack
+
+    Hristo
+    Uzunov - Dialogue Box
+
+    Pixabay
+
+
+
+    SFX:
+
+    Sound Effects provided by
+    Zapsplat
+
+
+
+    Coding Environment:
+
+    Visual Studio 2019
+
+
+
+    Graphic tools:
+
+    Paint.net
+
+    Photopea'
+  BulgarianCredits: "Dream Jam\r\n\u0413\u0440\u0430\u0444\u0438\u043A\u0430:\r\nasnimuz
+    - Country Side Platformer Asset\r\nCreative Kind - Obelisk Asset\r\nMaaot - Mossy
+    Cavern Asset\r\nLuizMelo - Fantasy Warrior and Wizard asset pack\r\nKronovi-
+    - Undead Executioner asset pack\r\nVampireGirl - Hearts and health bar asset
+    pack\r\nPipoya - VFX Warp Portal asset pack\r\nSzadi art. - RPG Main Character
+    asset pack (Developer)\r\nJan Schneider - Mansion Interior asset pack\r\nPop
+    Shop Packs - Cats asset pack\r\n\u0425\u0440\u0438\u0441\u0442\u043E \u0423\u0437\u0443\u043D\u043E\u0432
+    - Dialogue Box\r\nPixabay\r\n\r\nSFX:\r\nSound Effects provided by Zapsplat\r\n\r\n\u041F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u0430
+    \u0437\u0430 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u0438\u0440\u0430\u043D\u0435:\r\nVisual
+    Studio 2019\r\n\r\n\u0413\u0440\u0430\u0444\u0438\u0447\u043D\u0438 \u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u0438:\r\nPaint.net\r\nPhotopea"
   SettingsTitle: {fileID: 6806037792414626547}
   CreditsTitle: {fileID: 6809016037719468105}
   Credits: {fileID: 3883903973065104917}
@@ -249,7 +313,7 @@ GameObject:
   - component: {fileID: 7879910371832453355}
   m_Layer: 5
   m_Name: ControllerConfig
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1180,7 +1244,7 @@ RectTransform:
   m_Children:
   - {fileID: 994408426957553499}
   m_Father: {fileID: 182372734596380049}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5087,7 +5151,7 @@ GameObject:
   - component: {fileID: 9054317508777237283}
   m_Layer: 5
   m_Name: SFX_Volume
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5192,7 +5256,7 @@ RectTransform:
   - {fileID: 2461499858684542530}
   - {fileID: 7004973259202931460}
   m_Father: {fileID: 182372734596380049}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5662,7 +5726,7 @@ GameObject:
   - component: {fileID: 1971692583250364745}
   m_Layer: 5
   m_Name: Language
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7477,7 +7541,7 @@ GameObject:
   - component: {fileID: 3380447748719877957}
   m_Layer: 5
   m_Name: Controller
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7577,7 +7641,7 @@ RectTransform:
   m_Children:
   - {fileID: 7909158912023224940}
   m_Father: {fileID: 182372734596380049}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7895,7 +7959,7 @@ GameObject:
   - component: {fileID: 516147761898330641}
   m_Layer: 5
   m_Name: Title
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8252,7 +8316,7 @@ GameObject:
   - component: {fileID: 3914772872855448485}
   m_Layer: 5
   m_Name: Title
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8736,7 +8800,7 @@ GameObject:
   - component: {fileID: 8213492676135960328}
   m_Layer: 5
   m_Name: KeyboardConfg
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10551,7 +10615,7 @@ GameObject:
   - component: {fileID: 1450281179407125668}
   m_Layer: 5
   m_Name: Master_Volume
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10995,7 +11059,7 @@ GameObject:
   - component: {fileID: 8051375927142578808}
   m_Layer: 5
   m_Name: Title
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11367,7 +11431,7 @@ GameObject:
   - component: {fileID: 5948839168249389778}
   m_Layer: 5
   m_Name: Kayboard
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12215,7 +12279,7 @@ RectTransform:
   m_GameObject: {fileID: 4564869682234274718}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4564869681007209602}
@@ -12223,7 +12287,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 89, y: 430}
+  m_AnchoredPosition: {x: 89.000015, y: 430}
   m_SizeDelta: {x: 548.8138, y: 220.2849}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4564869682234274715
@@ -12909,7 +12973,7 @@ GameObject:
   - component: {fileID: 4653803047003254741}
   m_Layer: 5
   m_Name: Music_Volume
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16091,7 +16155,7 @@ GameObject:
   - component: {fileID: 7441178087704448932}
   m_Layer: 5
   m_Name: Bloom
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18157,9 +18221,9 @@ RectTransform:
   - {fileID: 4977543394321407271}
   - {fileID: 1534168469808042746}
   - {fileID: 8987720795723913693}
+  - {fileID: 1095412944437619497}
   - {fileID: 6532981572896592971}
   - {fileID: 3765224528463373661}
-  - {fileID: 1095412944437619497}
   - {fileID: 865916570542642200}
   m_Father: {fileID: 4564869681139233144}
   m_RootOrder: 2
@@ -18490,7 +18554,7 @@ GameObject:
   - component: {fileID: 4609379675941193014}
   m_Layer: 5
   m_Name: Brightness
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22258,7 +22322,7 @@ GameObject:
   - component: {fileID: 2900042493215588341}
   m_Layer: 5
   m_Name: Fullscreen
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22717,7 +22781,7 @@ GameObject:
   - component: {fileID: 1378188599303182}
   m_Layer: 5
   m_Name: Resolution
-  m_TagString: Untagged
+  m_TagString: LanguageDependent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23865,7 +23929,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1364218477853154343
