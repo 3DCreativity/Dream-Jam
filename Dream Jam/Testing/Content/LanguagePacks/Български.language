@@ -1,0 +1,215 @@
+#The symbol # will be used as a comment for the row
+#The symbol ^ Will be used to mark the level for which the following dialogue coresponds and /^ will mark to where the dialogue will corespond
+#The symbol ~ will mark the name of the Character in a dialogue and a submenu in the UI
+#The symbol /~ will mark the picture name in dialogue and the end in the UI elements
+#The symbol & will mark where is a trigger after some dialogue and the text afterwards will be used in the Editor as a hint on what it is supposed to do
+#If in a dialogue there isn't a trigger, it will pass on the next part as a continuation of the dialogue automatically
+
+^UI
+
+~Controls
+
+Movement = Движение
+Interact = Взаимодействие
+EnablAttack1 = Активиране Атака 1
+EnablAttack2 = Активиране Атака 2
+Attack1 = Атака 1
+Attack2 = Атака 2
+Heal = Регенериране
+Shield = Щит
+Focus = Фокус
+
+/~
+
+
+~Names
+
+#Character names
+
+Michael = Майкъл Адлър
+Cat = Оливър
+Glitch = 0̴͇̘̓̾̄J̶͉͛̀̚H̵̺͋͝͝ͅȒ̸̲̮i̴̧͑t̸͍̽̑̕C̶̱̳͙͐͋ẑ̵̯̆
+Executor = 
+Goblin = Бенго
+Witch = Критина
+Evil Wizard = 
+Dark Lord = 
+Guardian = Анселм
+
+
+#Button names
+#General
+Start = Старт
+Settings = Настройки
+Credits = Надписи
+Quit = Изход
+Back = Назад
+#Settings
+#Main
+GameplayBtn = Геймплей
+GraphicsBtn = Графика
+MusicBtn = Музика
+#Gameplay
+KeyboardConfig = Конфиг.
+ControllerConfig = Конфиг.
+Keyboard = Клавиатура
+Controller = Контролер
+Language = Език
+#Controller Listening Warning
+Controller_Warning = Няма засечен контролер!\nНатиснете X/A на контролера си, за да презаредите.
+#Music
+Music_Volume = Ниво На Музика
+SFX_Volume = Ниво На SFX
+Master_Volume = Ниво На Звук
+#Graphics
+Fullscreen = Цял Екран
+Resolution = Резолюция
+Bloom = Разцвет
+Brightness = Яркост
+#Pause Menu
+Pause = Пауза
+Resume = Възобнови
+Restart = Рестарт
+Exit_Main = Изход
+Exit = Изход игра
+
+/~
+~Titles
+
+#Level titles
+
+Level 1 = Странен Сън
+Level 2 = Level 2
+Level 3 = Level 3
+Level 4 = Level 4
+Level 5 = Level 5
+MainMenu = Главно Меню
+Tutorial = Tutorial
+TestLevel = Тестово Ниво
+SecretLevel = Скрито Ниво
+
+#Menu titles
+
+Main = Dream Jam
+Settings = Настройки
+Gameplay = Геймплей
+Music = Музика
+Graphics = Графика
+Credits = Надписи
+Version = 0 Alpha
+
+/~
+
+~Credits
+Dream Jam
+Графика:
+asnimuz - Country Side Platformer Asset
+Creative Kind - Obelisk Asset
+Maaot - Mossy Cavern Asset
+LuizMelo - Fantasy Warrior and Wizard asset pack
+Kronovi- - Undead Executioner asset pack
+VampireGirl - Hearts and health bar asset pack
+Pipoya - VFX Warp Portal asset pack
+Szadi art. - RPG Main Character asset pack (Developer)
+Jan Schneider - Mansion Interior asset pack
+Pop Shop Packs - Cats asset pack
+Христо Узунов - Dialogue Box
+Pixabay
+
+SFX:
+Sound Effects provided by Zapsplat
+
+Платформа за програмиране:
+Visual Studio 2019
+
+Графични инструменти:
+Paint.net
+Photopea
+/~
+
+/^
+
+^Warnings/Errors
+
+#Startup
+
+Startup_Warning_1 = Тази игра разполага с Автоматично Запазване
+Startup_Warning_2 = Не изключвайте машината си докато е показан този символ
+
+#Language Pack
+
+Language_Warning_BDir_NF = Предупреждение: Езикови пакети: Не е засечена директория Резерв
+Language_Warning_Pack = Предупреждение: Езикови пакети: Не е засечен pack файл. Създаване от шаблон...
+Language_Error_Pack = Грешка: Езикови пакети: Създаване неуспешно. Преинсталация може да е наложителна.
+Language_Error_BDir = Грешка: Езикови пакети: Създаване на Резерв неуспешно
+Language_Error_File = Грешка: Езикови пакети: {language}.language липсва! Преинсталация може да е наложителна.
+Language_Log_Pack = Лог: Езикови пакети: Създаване успешно.
+Language_Log_BDir = Лог: Езикови пакети: Създаване на директория Резерв успешно. Проверка на съдържание предстои...
+
+/^
+
+#StartDialogue
+
+^MainMenu
+
+#New game
+
+~Michael
+/~Developer
+
+#The result will be displayes in pieces, seperated by user input
+
+Oh man... I am tired.
+But I want to see the theme for the Game Jam before I go to sleep.
+Who knows...
+...maybe my idea for my game can come from my dream.
+Am I right Oscar?
+
+~Cat
+/~Cat
+
+meow
+
+&Revealing of the theme
+
+~Michael
+/~Developer
+
+Yes! The Jam started!
+And the theme is...
+"Secrets of the mystic"?
+yawn
+Too tired to think about it - better go to sleep.
+It's going to be a tough week.
+
+&Put Michael to sleep
+
+~Michael
+/~Developer
+
+	
+
+&Something 
+/^
+
+^Weird Dream
+
+
+~Michael
+/~Magician
+
+Wha........?
+Wait, what!?!
+Where am I?
+What is this place?
+
+~Cat
+/~Cat
+
+Our Lord, please save us!
+After you were banished, the whole kingdom is terrified of the new Dark Lord!
+He rules with power unlike anyone has ever seen!
+Most of the people are dead from him or hunger!
+You need to <>
+
+/^
